@@ -1,0 +1,372 @@
+{
+  "messages": [
+    "Поняла: Турция. Напишите «отмена», если хотите прервать.",
+    "Супер. На сколько ночей планируете? Напишите число (например 7) или выберите вариант ниже.",
+    "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже.",
+    "Запускаю поиск по уточнённым параметрам.",
+    "🔎 Ищу лучшие варианты для вас...",
+    "Фильтры: Турция • до 100 000 ₽ • июн 2026",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Asteria Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.9\n📅 06.06.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>62 900 ₽</b>\n🧳 Fun&amp;Sun",
+    "<b>Royal Palm Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.7\n📅 07.06.2026 • 7 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>65 400 ₽</b>\n🧳 Biblio Globus",
+    "<b>Coral Elite Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.8\n📅 16.06.2026 • 7 ночей\n🍽 Без питания • 🛏 Superior\n💸 <b>67 800 ₽</b>\n🧳 Anex",
+    "<b>Blue Horizon Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 08.06.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 850 ₽</b>\n🧳 Coral",
+    "<b>Coral Elite Belek</b>\n📍 🇹🇷 Turkey, Belek\n📅 18.06.2026 • 7 ночей\n🍽 Завтраки • 🛏 Junior Suite\n💸 <b>70 200 ₽</b>\n🧳 Anex",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "Поняла: Турция. Напишите «отмена», если хотите прервать."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Супер. На сколько ночей планируете? Напишите число (например 7) или выберите вариант ниже.",
+      "keyboard": [
+        [
+          {
+            "text": "7",
+            "callback_data": "ai:nights:7"
+          },
+          {
+            "text": "10",
+            "callback_data": "ai:nights:10"
+          },
+          {
+            "text": "14",
+            "callback_data": "ai:nights:14"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже.",
+      "keyboard": [
+        [
+          {
+            "text": "100k",
+            "callback_data": "ai:budget:100000"
+          },
+          {
+            "text": "150k",
+            "callback_data": "ai:budget:150000"
+          },
+          {
+            "text": "250k",
+            "callback_data": "ai:budget:250000"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "answerCallbackQuery",
+      "callbackData": "cbq-3"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Запускаю поиск по уточнённым параметрам."
+    },
+    {
+      "method": "sendMessage",
+      "text": "🔎 Ищу лучшие варианты для вас..."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Фильтры: Турция • до 100 000 ₽ • июн 2026"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Asteria Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.9\n📅 06.06.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>62 900 ₽</b>\n🧳 Fun&amp;Sun",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-7df19a25e5d4:1050"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1050"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Royal Palm Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.7\n📅 07.06.2026 • 7 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>65 400 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-7df19a25e5d4:1065"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1065"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Coral Elite Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.8\n📅 16.06.2026 • 7 ночей\n🍽 Без питания • 🛏 Superior\n💸 <b>67 800 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-7df19a25e5d4:1013"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1013"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Blue Horizon Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 08.06.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 850 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-7df19a25e5d4:1017"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1017"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Coral Elite Belek</b>\n📍 🇹🇷 Turkey, Belek\n📅 18.06.2026 • 7 ночей\n🍽 Завтраки • 🛏 Junior Suite\n💸 <b>70 200 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-7df19a25e5d4:1064"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1064"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-7df19a25e5d4"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 47,
+    "nightsMin": 7,
+    "nightsMax": 7,
+    "budgetMax": 100000,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-7df19a25e5d4",
+    "lastSearchArgs": {
+      "country_id": 47,
+      "departure_id": 1,
+      "date_from": "2026-06-01",
+      "date_to": "2026-06-20",
+      "nights_min": 7,
+      "nights_max": 7,
+      "adults": 2,
+      "children": 0,
+      "budget_max": 100000,
+      "meal": 0,
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 47,
+      "countryName": "Турция",
+      "dateFrom": "2026-06-01",
+      "dateTo": "2026-06-20",
+      "nightsMin": 7,
+      "nightsMax": 7,
+      "budgetMax": 100000,
+      "meal": "ANY",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-06-01",
+        "date_to": "2026-06-20",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "budget_max": 100000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 62900,
+          "currency": "RUB",
+          "date_from": "2026-06-06",
+          "nights": 7,
+          "operator": "Fun&Sun",
+          "hotel_id": 1050,
+          "hotel_name": "Asteria Resort Belek",
+          "stars": 3,
+          "rating": 3.9,
+          "meal": "RO",
+          "room": "Deluxe",
+          "country_name": "Turkey",
+          "city_name": "Belek",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_01.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "322a6da34c67c8c8e625e28526714060207c5a79d668e43519be172aacd74b3b"
+          }
+        },
+        {
+          "price": 65400,
+          "currency": "RUB",
+          "date_from": "2026-06-07",
+          "nights": 7,
+          "operator": "Biblio Globus",
+          "hotel_id": 1065,
+          "hotel_name": "Royal Palm Resort Side",
+          "stars": 3,
+          "rating": 3.7,
+          "meal": "RO",
+          "room": "Standard",
+          "country_name": "Turkey",
+          "city_name": "Side",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_02.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "322a6da34c67c8c8e625e28526714060207c5a79d668e43519be172aacd74b3b"
+          }
+        },
+        {
+          "price": 67800,
+          "currency": "RUB",
+          "date_from": "2026-06-16",
+          "nights": 7,
+          "operator": "Anex",
+          "hotel_id": 1013,
+          "hotel_name": "Coral Elite Resort Kemer",
+          "stars": 3,
+          "rating": 3.8,
+          "meal": "RO",
+          "room": "Superior",
+          "country_name": "Turkey",
+          "city_name": "Kemer",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_03.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "322a6da34c67c8c8e625e28526714060207c5a79d668e43519be172aacd74b3b"
+          }
+        },
+        {
+          "price": 69850,
+          "currency": "RUB",
+          "date_from": "2026-06-08",
+          "nights": 7,
+          "operator": "Coral",
+          "hotel_id": 1017,
+          "hotel_name": "Blue Horizon Resort Belek",
+          "stars": 3,
+          "rating": 3.3,
+          "meal": "RO",
+          "room": "Deluxe",
+          "country_name": "Turkey",
+          "city_name": "Belek",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_05.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "322a6da34c67c8c8e625e28526714060207c5a79d668e43519be172aacd74b3b"
+          }
+        },
+        {
+          "price": 70200,
+          "currency": "RUB",
+          "date_from": "2026-06-18",
+          "nights": 7,
+          "operator": "Anex",
+          "hotel_id": 1064,
+          "hotel_name": "Coral Elite Belek",
+          "stars": 3,
+          "meal": "BB",
+          "room": "Junior Suite",
+          "country_name": "Turkey",
+          "city_name": "Belek",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_06.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "322a6da34c67c8c8e625e28526714060207c5a79d668e43519be172aacd74b3b"
+          }
+        }
+      ],
+      "lastRequestId": "mock-7df19a25e5d4"
+    }
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Blue Horizon Resort Dubai</b>\n📍 🇦🇪 UAE, Dubai\n⭐️ 3.3\n📅 04.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>86 400 ₽</b>\n🧳 TUI",
+    "<b>Asteria Resort Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 3.7\n📅 12.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>87 220 ₽</b>\n🧳 TUI",
+    "<b>Sea Breeze Resort Abu Dhabi</b>\n📍 🇦🇪 UAE, Abu Dhabi\n⭐️ 4.1\n📅 28.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>90 500 ₽</b>\n🧳 Tez Tour",
+    "<b>Vista Mare Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 3.7\n📅 19.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Superior\n💸 <b>92 400 ₽</b>\n🧳 Pegas",
+    "<b>Crystal Bay Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 3.9\n📅 15.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Deluxe\n💸 <b>94 100 ₽</b>\n🧳 Coral",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Blue Horizon Resort Dubai</b>\n📍 🇦🇪 UAE, Dubai\n⭐️ 3.3\n📅 04.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>86 400 ₽</b>\n🧳 TUI",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-157f495d1cfd:1038"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1038"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Asteria Resort Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 3.7\n📅 12.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>87 220 ₽</b>\n🧳 TUI",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-157f495d1cfd:1037"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1037"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Sea Breeze Resort Abu Dhabi</b>\n📍 🇦🇪 UAE, Abu Dhabi\n⭐️ 4.1\n📅 28.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>90 500 ₽</b>\n🧳 Tez Tour",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-157f495d1cfd:1060"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1060"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Vista Mare Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 3.7\n📅 19.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Superior\n💸 <b>92 400 ₽</b>\n🧳 Pegas",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-157f495d1cfd:1067"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1067"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Crystal Bay Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 3.9\n📅 15.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Deluxe\n💸 <b>94 100 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-157f495d1cfd:1001"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1001"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-157f495d1cfd"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 63,
+    "nightsMin": 7,
+    "nightsMax": 7,
+    "budgetMax": 150000,
+    "meal": "BB",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-157f495d1cfd",
+    "lastSearchArgs": {
+      "country_id": 63,
+      "departure_id": 1,
+      "date_from": "2026-07-01",
+      "date_to": "2026-07-31",
+      "nights_min": 7,
+      "nights_max": 7,
+      "adults": 2,
+      "children": 0,
+      "country_name": "UAE",
+      "budget_max": 150000,
+      "meal": "BB",
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 63,
+      "countryName": "ОАЭ",
+      "dateFrom": "2026-07-01",
+      "dateTo": "2026-07-31",
+      "nightsMin": 7,
+      "nightsMax": 7,
+      "budgetMax": 150000,
+      "meal": "BB",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 63,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "UAE",
+        "budget_max": 150000,
+        "meal": "BB",
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 86400,
+          "currency": "RUB",
+          "date_from": "2026-07-04",
+          "nights": 7,
+          "operator": "TUI",
+          "hotel_id": 1038,
+          "hotel_name": "Blue Horizon Resort Dubai",
+          "stars": 3,
+          "rating": 3.3,
+          "meal": "BB",
+          "room": "Suite",
+          "country_name": "UAE",
+          "city_name": "Dubai",
+          "flag_emoji": "🇦🇪",
+          "image_url": "/assets/hotels/uae/uae_06.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "4312d3651ff0f7186eb4146b283302fe7e9b8aa46bb5caa03113fd39fc663760"
+          }
+        },
+        {
+          "price": 87220,
+          "currency": "RUB",
+          "date_from": "2026-07-12",
+          "nights": 7,
+          "operator": "TUI",
+          "hotel_id": 1037,
+          "hotel_name": "Asteria Resort Ras Al Khaimah",
+          "stars": 3,
+          "rating": 3.7,
+          "meal": "BB",
+          "room": "Suite",
+          "country_name": "UAE",
+          "city_name": "Ras Al Khaimah",
+          "flag_emoji": "🇦🇪",
+          "image_url": "/assets/hotels/uae/uae_03.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "4312d3651ff0f7186eb4146b283302fe7e9b8aa46bb5caa03113fd39fc663760"
+          }
+        },
+        {
+          "price": 90500,
+          "currency": "RUB",
+          "date_from": "2026-07-28",
+          "nights": 7,
+          "operator": "Tez Tour",
+          "hotel_id": 1060,
+          "hotel_name": "Sea Breeze Resort Abu Dhabi",
+          "stars": 3,
+          "rating": 4.1,
+          "meal": "BB",
+          "room": "Family Room",
+          "country_name": "UAE",
+          "city_name": "Abu Dhabi",
+          "flag_emoji": "🇦🇪",
+          "image_url": "/assets/hotels/uae/uae_08.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "4312d3651ff0f7186eb4146b283302fe7e9b8aa46bb5caa03113fd39fc663760"
+          }
+        },
+        {
+          "price": 92400,
+          "currency": "RUB",
+          "date_from": "2026-07-19",
+          "nights": 7,
+          "operator": "Pegas",
+          "hotel_id": 1067,
+          "hotel_name": "Vista Mare Ras Al Khaimah",
+          "stars": 3,
+          "rating": 3.7,
+          "meal": "BB",
+          "room": "Superior",
+          "country_name": "UAE",
+          "city_name": "Ras Al Khaimah",
+          "flag_emoji": "🇦🇪",
+          "image_url": "/assets/hotels/uae/uae_04.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "4312d3651ff0f7186eb4146b283302fe7e9b8aa46bb5caa03113fd39fc663760"
+          }
+        },
+        {
+          "price": 94100,
+          "currency": "RUB",
+          "date_from": "2026-07-15",
+          "nights": 7,
+          "operator": "Coral",
+          "hotel_id": 1001,
+          "hotel_name": "Crystal Bay Ras Al Khaimah",
+          "stars": 3,
+          "rating": 3.9,
+          "meal": "BB",
+          "room": "Deluxe",
+          "country_name": "UAE",
+          "city_name": "Ras Al Khaimah",
+          "flag_emoji": "🇦🇪",
+          "image_url": "/assets/hotels/uae/uae_05.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "4312d3651ff0f7186eb4146b283302fe7e9b8aa46bb5caa03113fd39fc663760"
+          }
+        }
+      ],
+      "lastRequestId": "mock-157f495d1cfd"
+    }
+  }
+}

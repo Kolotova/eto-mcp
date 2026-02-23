@@ -1,0 +1,195 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Crystal Bay Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>60 300 ₽</b>\n🧳 Pegas",
+    "<b>Vista Mare Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 18.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 000 ₽</b>\n🧳 Coral",
+    "<b>Sunwave Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.0\n📅 25.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>70 600 ₽</b>\n🧳 Anex",
+    "<b>Imperial Sands Resort Side</b>\n📍 🇹🇷 Turkey, Side\n📅 10.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>70 800 ₽</b>\n🧳 Anex",
+    "<b>Crystal Bay Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 01.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 100 ₽</b>\n🧳 Tez Tour",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:",
+    "Выберите страну для отдыха:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Crystal Bay Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>60 300 ₽</b>\n🧳 Pegas",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-adca21747853:1011"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1011"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Vista Mare Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 18.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 000 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-adca21747853:1050"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1050"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Sunwave Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.0\n📅 25.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>70 600 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-adca21747853:1057"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1057"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Imperial Sands Resort Side</b>\n📍 🇹🇷 Turkey, Side\n📅 10.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>70 800 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-adca21747853:1001"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1001"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Crystal Bay Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 01.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 100 ₽</b>\n🧳 Tez Tour",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-adca21747853:1006"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1006"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-adca21747853"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "answerCallbackQuery",
+      "callbackData": "cbq-2"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите страну для отдыха:",
+      "keyboard": [
+        [
+          {
+            "text": "Турция 🇹🇷",
+            "callback_data": "country:47"
+          },
+          {
+            "text": "Египет 🇪🇬",
+            "callback_data": "country:54"
+          },
+          {
+            "text": "Таиланд 🇹🇭",
+            "callback_data": "country:29"
+          }
+        ],
+        [
+          {
+            "text": "ОАЭ 🇦🇪",
+            "callback_data": "country:63"
+          },
+          {
+            "text": "Мальдивы 🇲🇻",
+            "callback_data": "country:90"
+          },
+          {
+            "text": "Сейшелы 🇸🇨",
+            "callback_data": "country:91"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 47,
+    "nightsMin": 6,
+    "nightsMax": 10,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "aiMode": false,
+    "aiAwaiting": null
+  }
+}

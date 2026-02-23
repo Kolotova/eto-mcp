@@ -1,0 +1,277 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 4 тура. Показываю все.",
+    "<b>Blue Horizon Baa Atoll</b>\n📍 🇲🇻 Maldives, Baa Atoll\n⭐️ 3.1\n📅 27.09.2026 • 10 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>102 000 ₽</b>\n🧳 Pegas",
+    "<b>Imperial Sands Baa Atoll</b>\n📍 🇲🇻 Maldives, Baa Atoll\n⭐️ 3.5\n📅 04.09.2026 • 10 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>102 700 ₽</b>\n🧳 Biblio Globus",
+    "<b>Grand Azure South Malé Atoll</b>\n📍 🇲🇻 Maldives, South Malé Atoll\n⭐️ 3.4\n📅 20.09.2026 • 10 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>105 600 ₽</b>\n🧳 Fun&amp;Sun",
+    "<b>Vista Mare Ari Atoll</b>\n📍 🇲🇻 Maldives, Ari Atoll\n⭐️ 3.2\n📅 24.09.2026 • 10 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>105 750 ₽</b>\n🧳 TUI",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 4 тура. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Blue Horizon Baa Atoll</b>\n📍 🇲🇻 Maldives, Baa Atoll\n⭐️ 3.1\n📅 27.09.2026 • 10 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>102 000 ₽</b>\n🧳 Pegas",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-28b5f5a6685a:1027"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1027"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Imperial Sands Baa Atoll</b>\n📍 🇲🇻 Maldives, Baa Atoll\n⭐️ 3.5\n📅 04.09.2026 • 10 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>102 700 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-28b5f5a6685a:1089"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1089"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Grand Azure South Malé Atoll</b>\n📍 🇲🇻 Maldives, South Malé Atoll\n⭐️ 3.4\n📅 20.09.2026 • 10 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>105 600 ₽</b>\n🧳 Fun&amp;Sun",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-28b5f5a6685a:1038"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1038"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Vista Mare Ari Atoll</b>\n📍 🇲🇻 Maldives, Ari Atoll\n⭐️ 3.2\n📅 24.09.2026 • 10 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>105 750 ₽</b>\n🧳 TUI",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-28b5f5a6685a:1039"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1039"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-28b5f5a6685a"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 90,
+    "nightsMin": 10,
+    "nightsMax": 10,
+    "budgetMax": 110000,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-28b5f5a6685a",
+    "lastSearchArgs": {
+      "country_id": 90,
+      "departure_id": 1,
+      "date_from": "2026-09-01",
+      "date_to": "2026-09-30",
+      "nights_min": 10,
+      "nights_max": 10,
+      "adults": 2,
+      "children": 0,
+      "country_name": "Maldives",
+      "budget_min": 90000,
+      "budget_max": 110000,
+      "meal": 0,
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 90,
+      "countryName": "Мальдивы",
+      "dateFrom": "2026-09-01",
+      "dateTo": "2026-09-30",
+      "nightsMin": 10,
+      "nightsMax": 10,
+      "budgetMax": 110000,
+      "budgetMin": 90000,
+      "meal": "ANY",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 90,
+        "departure_id": 1,
+        "date_from": "2026-09-01",
+        "date_to": "2026-09-30",
+        "nights_min": 10,
+        "nights_max": 10,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Maldives",
+        "budget_min": 90000,
+        "budget_max": 110000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 102000,
+          "currency": "RUB",
+          "date_from": "2026-09-27",
+          "nights": 10,
+          "operator": "Pegas",
+          "hotel_id": 1027,
+          "hotel_name": "Blue Horizon Baa Atoll",
+          "stars": 3,
+          "rating": 3.1,
+          "meal": "RO",
+          "room": "Deluxe",
+          "country_name": "Maldives",
+          "city_name": "Baa Atoll",
+          "flag_emoji": "🇲🇻",
+          "image_url": "/assets/hotels/maldives/maldives_02.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "45ee1a0035a38a3c12786201483577864d11180bcbdf68c42e3cabd3a554f19f"
+          }
+        },
+        {
+          "price": 102700,
+          "currency": "RUB",
+          "date_from": "2026-09-04",
+          "nights": 10,
+          "operator": "Biblio Globus",
+          "hotel_id": 1089,
+          "hotel_name": "Imperial Sands Baa Atoll",
+          "stars": 3,
+          "rating": 3.5,
+          "meal": "BB",
+          "room": "Family Room",
+          "country_name": "Maldives",
+          "city_name": "Baa Atoll",
+          "flag_emoji": "🇲🇻",
+          "image_url": "/assets/hotels/maldives/maldives_05.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "45ee1a0035a38a3c12786201483577864d11180bcbdf68c42e3cabd3a554f19f"
+          }
+        },
+        {
+          "price": 105600,
+          "currency": "RUB",
+          "date_from": "2026-09-20",
+          "nights": 10,
+          "operator": "Fun&Sun",
+          "hotel_id": 1038,
+          "hotel_name": "Grand Azure South Malé Atoll",
+          "stars": 3,
+          "rating": 3.4,
+          "meal": "RO",
+          "room": "Junior Suite",
+          "country_name": "Maldives",
+          "city_name": "South Malé Atoll",
+          "flag_emoji": "🇲🇻",
+          "image_url": "/assets/hotels/maldives/maldives_06.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "45ee1a0035a38a3c12786201483577864d11180bcbdf68c42e3cabd3a554f19f"
+          }
+        },
+        {
+          "price": 105750,
+          "currency": "RUB",
+          "date_from": "2026-09-24",
+          "nights": 10,
+          "operator": "TUI",
+          "hotel_id": 1039,
+          "hotel_name": "Vista Mare Ari Atoll",
+          "stars": 3,
+          "rating": 3.2,
+          "meal": "RO",
+          "room": "Family Room",
+          "country_name": "Maldives",
+          "city_name": "Ari Atoll",
+          "flag_emoji": "🇲🇻",
+          "image_url": "/assets/hotels/maldives/maldives_08.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "45ee1a0035a38a3c12786201483577864d11180bcbdf68c42e3cabd3a554f19f"
+          }
+        }
+      ],
+      "lastRequestId": "mock-28b5f5a6685a"
+    }
+  }
+}

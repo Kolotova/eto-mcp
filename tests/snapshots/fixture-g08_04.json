@@ -1,0 +1,314 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Crystal Bay Resort Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 3.2\n📅 10.06.2026 • 3 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>46 420 ₽</b>\n🧳 Coral",
+    "<b>Marina Crown Resort Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 3.8\n📅 09.06.2026 • 3 ночей\n🍽 Завтрак + ужин • 🛏 Suite\n💸 <b>51 400 ₽</b>\n🧳 Coral",
+    "<b>Royal Palm Resort Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 3.7\n📅 18.06.2026 • 3 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>52 000 ₽</b>\n🧳 Biblio Globus",
+    "<b>Sunwave Resort Marsa Alam</b>\n📍 🇪🇬 Egypt, Marsa Alam\n⭐️ 3.4\n📅 20.06.2026 • 3 ночей\n🍽 Завтрак + ужин • 🛏 Deluxe\n💸 <b>53 000 ₽</b>\n🧳 Biblio Globus",
+    "<b>Grand Azure Resort Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 4.0\n📅 05.06.2026 • 3 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>53 390 ₽</b>\n🧳 Pegas",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Crystal Bay Resort Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 3.2\n📅 10.06.2026 • 3 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>46 420 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-57743e2fb195:1012"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1012"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Marina Crown Resort Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 3.8\n📅 09.06.2026 • 3 ночей\n🍽 Завтрак + ужин • 🛏 Suite\n💸 <b>51 400 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-57743e2fb195:1002"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1002"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Royal Palm Resort Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 3.7\n📅 18.06.2026 • 3 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>52 000 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-57743e2fb195:1022"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1022"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Sunwave Resort Marsa Alam</b>\n📍 🇪🇬 Egypt, Marsa Alam\n⭐️ 3.4\n📅 20.06.2026 • 3 ночей\n🍽 Завтрак + ужин • 🛏 Deluxe\n💸 <b>53 000 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-57743e2fb195:1058"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1058"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Grand Azure Resort Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 4.0\n📅 05.06.2026 • 3 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>53 390 ₽</b>\n🧳 Pegas",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-57743e2fb195:1030"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1030"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-57743e2fb195"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 54,
+    "nightsMin": 3,
+    "nightsMax": 3,
+    "budgetMax": 100000,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-57743e2fb195",
+    "lastSearchArgs": {
+      "country_id": 54,
+      "departure_id": 1,
+      "date_from": "2026-06-01",
+      "date_to": "2026-06-20",
+      "nights_min": 3,
+      "nights_max": 3,
+      "adults": 2,
+      "children": 0,
+      "country_name": "Egypt",
+      "budget_max": 100000,
+      "meal": 0,
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 54,
+      "countryName": "Египет",
+      "dateFrom": "2026-06-01",
+      "dateTo": "2026-06-20",
+      "nightsMin": 3,
+      "nightsMax": 3,
+      "budgetMax": 100000,
+      "meal": "ANY",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 54,
+        "departure_id": 1,
+        "date_from": "2026-06-01",
+        "date_to": "2026-06-20",
+        "nights_min": 3,
+        "nights_max": 3,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Egypt",
+        "budget_max": 100000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 46420,
+          "currency": "RUB",
+          "date_from": "2026-06-10",
+          "nights": 3,
+          "operator": "Coral",
+          "hotel_id": 1012,
+          "hotel_name": "Crystal Bay Resort Sharm El Sheikh",
+          "stars": 3,
+          "rating": 3.2,
+          "meal": "RO",
+          "room": "Junior Suite",
+          "country_name": "Egypt",
+          "city_name": "Sharm El Sheikh",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_03.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "5aa33be2ff476cdfc93ba03301c5ee9d65028a4b40d42b96d3de91f9d2d651d5"
+          }
+        },
+        {
+          "price": 51400,
+          "currency": "RUB",
+          "date_from": "2026-06-09",
+          "nights": 3,
+          "operator": "Coral",
+          "hotel_id": 1002,
+          "hotel_name": "Marina Crown Resort Sharm El Sheikh",
+          "stars": 3,
+          "rating": 3.8,
+          "meal": "HB",
+          "room": "Suite",
+          "country_name": "Egypt",
+          "city_name": "Sharm El Sheikh",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_08.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "5aa33be2ff476cdfc93ba03301c5ee9d65028a4b40d42b96d3de91f9d2d651d5"
+          }
+        },
+        {
+          "price": 52000,
+          "currency": "RUB",
+          "date_from": "2026-06-18",
+          "nights": 3,
+          "operator": "Biblio Globus",
+          "hotel_id": 1022,
+          "hotel_name": "Royal Palm Resort Sharm El Sheikh",
+          "stars": 3,
+          "rating": 3.7,
+          "meal": "RO",
+          "room": "Standard",
+          "country_name": "Egypt",
+          "city_name": "Sharm El Sheikh",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_07.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "5aa33be2ff476cdfc93ba03301c5ee9d65028a4b40d42b96d3de91f9d2d651d5"
+          }
+        },
+        {
+          "price": 53000,
+          "currency": "RUB",
+          "date_from": "2026-06-20",
+          "nights": 3,
+          "operator": "Biblio Globus",
+          "hotel_id": 1058,
+          "hotel_name": "Sunwave Resort Marsa Alam",
+          "stars": 3,
+          "rating": 3.4,
+          "meal": "HB",
+          "room": "Deluxe",
+          "country_name": "Egypt",
+          "city_name": "Marsa Alam",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_02.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "5aa33be2ff476cdfc93ba03301c5ee9d65028a4b40d42b96d3de91f9d2d651d5"
+          }
+        },
+        {
+          "price": 53390,
+          "currency": "RUB",
+          "date_from": "2026-06-05",
+          "nights": 3,
+          "operator": "Pegas",
+          "hotel_id": 1030,
+          "hotel_name": "Grand Azure Resort Sharm El Sheikh",
+          "stars": 3,
+          "rating": 4,
+          "meal": "HB",
+          "room": "Standard",
+          "country_name": "Egypt",
+          "city_name": "Sharm El Sheikh",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_01.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "5aa33be2ff476cdfc93ba03301c5ee9d65028a4b40d42b96d3de91f9d2d651d5"
+          }
+        }
+      ],
+      "lastRequestId": "mock-57743e2fb195"
+    }
+  }
+}

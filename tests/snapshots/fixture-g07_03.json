@@ -1,0 +1,314 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Crystal Bay Resort Khao Lak</b>\n📍 🇹🇭 Thailand, Khao Lak\n⭐️ 3.1\n📅 13.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>67 700 ₽</b>\n🧳 Coral",
+    "<b>Vista Mare Krabi</b>\n📍 🇹🇭 Thailand, Krabi\n⭐️ 3.2\n📅 26.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Superior\n💸 <b>70 400 ₽</b>\n🧳 Biblio Globus",
+    "<b>Royal Palm Khao Lak</b>\n📍 🇹🇭 Thailand, Khao Lak\n⭐️ 3.6\n📅 19.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>82 100 ₽</b>\n🧳 Tez Tour",
+    "<b>Grand Azure Krabi</b>\n📍 🇹🇭 Thailand, Krabi\n⭐️ 3.4\n📅 17.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>85 700 ₽</b>\n🧳 Biblio Globus",
+    "<b>Royal Palm Resort Khao Lak</b>\n📍 🇹🇭 Thailand, Khao Lak\n⭐️ 4.4\n📅 07.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>87 900 ₽</b>\n🧳 Biblio Globus",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Crystal Bay Resort Khao Lak</b>\n📍 🇹🇭 Thailand, Khao Lak\n⭐️ 3.1\n📅 13.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>67 700 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-7d2a9ec85f38:1097"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1097"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Vista Mare Krabi</b>\n📍 🇹🇭 Thailand, Krabi\n⭐️ 3.2\n📅 26.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Superior\n💸 <b>70 400 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-7d2a9ec85f38:1074"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1074"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Royal Palm Khao Lak</b>\n📍 🇹🇭 Thailand, Khao Lak\n⭐️ 3.6\n📅 19.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>82 100 ₽</b>\n🧳 Tez Tour",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-7d2a9ec85f38:1068"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1068"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Grand Azure Krabi</b>\n📍 🇹🇭 Thailand, Krabi\n⭐️ 3.4\n📅 17.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>85 700 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-7d2a9ec85f38:1008"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1008"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Royal Palm Resort Khao Lak</b>\n📍 🇹🇭 Thailand, Khao Lak\n⭐️ 4.4\n📅 07.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>87 900 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-7d2a9ec85f38:1000"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1000"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-7d2a9ec85f38"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 29,
+    "nightsMin": 7,
+    "nightsMax": 7,
+    "budgetMax": 120000,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-7d2a9ec85f38",
+    "lastSearchArgs": {
+      "country_id": 29,
+      "departure_id": 1,
+      "date_from": "2026-07-01",
+      "date_to": "2026-07-31",
+      "nights_min": 7,
+      "nights_max": 7,
+      "adults": 2,
+      "children": 0,
+      "country_name": "Thailand",
+      "budget_max": 120000,
+      "meal": "RO",
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 29,
+      "countryName": "Таиланд",
+      "dateFrom": "2026-07-01",
+      "dateTo": "2026-07-31",
+      "nightsMin": 7,
+      "nightsMax": 7,
+      "budgetMax": 120000,
+      "meal": "RO",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 29,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Thailand",
+        "budget_max": 120000,
+        "meal": "RO",
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 67700,
+          "currency": "RUB",
+          "date_from": "2026-07-13",
+          "nights": 7,
+          "operator": "Coral",
+          "hotel_id": 1097,
+          "hotel_name": "Crystal Bay Resort Khao Lak",
+          "stars": 3,
+          "rating": 3.1,
+          "meal": "RO",
+          "room": "Standard",
+          "country_name": "Thailand",
+          "city_name": "Khao Lak",
+          "flag_emoji": "🇹🇭",
+          "image_url": "/assets/hotels/thailand/thailand_05.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "f8b500e8231e0f6d62fbcb453519d928ec755654a43bdfd02adb9b56ade846fc"
+          }
+        },
+        {
+          "price": 70400,
+          "currency": "RUB",
+          "date_from": "2026-07-26",
+          "nights": 7,
+          "operator": "Biblio Globus",
+          "hotel_id": 1074,
+          "hotel_name": "Vista Mare Krabi",
+          "stars": 3,
+          "rating": 3.2,
+          "meal": "RO",
+          "room": "Superior",
+          "country_name": "Thailand",
+          "city_name": "Krabi",
+          "flag_emoji": "🇹🇭",
+          "image_url": "/assets/hotels/thailand/thailand_04.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "f8b500e8231e0f6d62fbcb453519d928ec755654a43bdfd02adb9b56ade846fc"
+          }
+        },
+        {
+          "price": 82100,
+          "currency": "RUB",
+          "date_from": "2026-07-19",
+          "nights": 7,
+          "operator": "Tez Tour",
+          "hotel_id": 1068,
+          "hotel_name": "Royal Palm Khao Lak",
+          "stars": 3,
+          "rating": 3.6,
+          "meal": "RO",
+          "room": "Family Room",
+          "country_name": "Thailand",
+          "city_name": "Khao Lak",
+          "flag_emoji": "🇹🇭",
+          "image_url": "/assets/hotels/thailand/thailand_06.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "f8b500e8231e0f6d62fbcb453519d928ec755654a43bdfd02adb9b56ade846fc"
+          }
+        },
+        {
+          "price": 85700,
+          "currency": "RUB",
+          "date_from": "2026-07-17",
+          "nights": 7,
+          "operator": "Biblio Globus",
+          "hotel_id": 1008,
+          "hotel_name": "Grand Azure Krabi",
+          "stars": 3,
+          "rating": 3.4,
+          "meal": "RO",
+          "room": "Family Room",
+          "country_name": "Thailand",
+          "city_name": "Krabi",
+          "flag_emoji": "🇹🇭",
+          "image_url": "/assets/hotels/thailand/thailand_07.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "f8b500e8231e0f6d62fbcb453519d928ec755654a43bdfd02adb9b56ade846fc"
+          }
+        },
+        {
+          "price": 87900,
+          "currency": "RUB",
+          "date_from": "2026-07-07",
+          "nights": 7,
+          "operator": "Biblio Globus",
+          "hotel_id": 1000,
+          "hotel_name": "Royal Palm Resort Khao Lak",
+          "stars": 4,
+          "rating": 4.4,
+          "meal": "RO",
+          "room": "Family Room",
+          "country_name": "Thailand",
+          "city_name": "Khao Lak",
+          "flag_emoji": "🇹🇭",
+          "image_url": "/assets/hotels/thailand/thailand_01.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "f8b500e8231e0f6d62fbcb453519d928ec755654a43bdfd02adb9b56ade846fc"
+          }
+        }
+      ],
+      "lastRequestId": "mock-7d2a9ec85f38"
+    }
+  }
+}

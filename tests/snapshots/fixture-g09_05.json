@@ -1,0 +1,369 @@
+{
+  "messages": [
+    "Поняла: Турция. Напишите «отмена», если хотите прервать.",
+    "Супер. На сколько ночей планируете? Напишите число (например 7) или выберите вариант ниже.",
+    "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже.",
+    "Запускаю поиск по уточнённым параметрам.",
+    "🔎 Ищу лучшие варианты для вас...",
+    "Фильтры: Турция • до 120 000 ₽ • июн 2026",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Grand Azure Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 4.1\n📅 18.06.2026 • 15 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>91 500 ₽</b>\n🧳 Biblio Globus",
+    "<b>Marina Crown Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 4.1\n📅 16.06.2026 • 15 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>93 600 ₽</b>\n🧳 Pegas",
+    "<b>Vista Mare Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.1\n📅 02.06.2026 • 15 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>97 600 ₽</b>\n🧳 Tez Tour",
+    "<b>Asteria Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 12.06.2026 • 15 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>100 700 ₽</b>\n🧳 Biblio Globus",
+    "<b>Asteria Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 01.06.2026 • 15 ночей\n🍽 Завтрак + ужин • 🛏 Suite\n💸 <b>104 000 ₽</b>\n🧳 Pegas",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "Поняла: Турция. Напишите «отмена», если хотите прервать."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Супер. На сколько ночей планируете? Напишите число (например 7) или выберите вариант ниже.",
+      "keyboard": [
+        [
+          {
+            "text": "7",
+            "callback_data": "ai:nights:7"
+          },
+          {
+            "text": "10",
+            "callback_data": "ai:nights:10"
+          },
+          {
+            "text": "14",
+            "callback_data": "ai:nights:14"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже.",
+      "keyboard": [
+        [
+          {
+            "text": "100k",
+            "callback_data": "ai:budget:100000"
+          },
+          {
+            "text": "150k",
+            "callback_data": "ai:budget:150000"
+          },
+          {
+            "text": "250k",
+            "callback_data": "ai:budget:250000"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Запускаю поиск по уточнённым параметрам."
+    },
+    {
+      "method": "sendMessage",
+      "text": "🔎 Ищу лучшие варианты для вас..."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Фильтры: Турция • до 120 000 ₽ • июн 2026"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Grand Azure Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 4.1\n📅 18.06.2026 • 15 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>91 500 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-4fcc369c7f3f:1055"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1055"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Marina Crown Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 4.1\n📅 16.06.2026 • 15 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>93 600 ₽</b>\n🧳 Pegas",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-4fcc369c7f3f:1057"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1057"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Vista Mare Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.1\n📅 02.06.2026 • 15 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>97 600 ₽</b>\n🧳 Tez Tour",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-4fcc369c7f3f:1000"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1000"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Asteria Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 12.06.2026 • 15 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>100 700 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-4fcc369c7f3f:1073"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1073"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Asteria Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 01.06.2026 • 15 ночей\n🍽 Завтрак + ужин • 🛏 Suite\n💸 <b>104 000 ₽</b>\n🧳 Pegas",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-4fcc369c7f3f:1017"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1017"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-4fcc369c7f3f"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 47,
+    "nightsMin": 15,
+    "nightsMax": 15,
+    "budgetMax": 120000,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-4fcc369c7f3f",
+    "lastSearchArgs": {
+      "country_id": 47,
+      "departure_id": 1,
+      "date_from": "2026-06-01",
+      "date_to": "2026-06-20",
+      "nights_min": 15,
+      "nights_max": 15,
+      "adults": 2,
+      "children": 0,
+      "budget_max": 120000,
+      "meal": 0,
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 47,
+      "countryName": "Турция",
+      "dateFrom": "2026-06-01",
+      "dateTo": "2026-06-20",
+      "nightsMin": 15,
+      "nightsMax": 15,
+      "budgetMax": 120000,
+      "meal": "ANY",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-06-01",
+        "date_to": "2026-06-20",
+        "nights_min": 15,
+        "nights_max": 15,
+        "adults": 2,
+        "children": 0,
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 91500,
+          "currency": "RUB",
+          "date_from": "2026-06-18",
+          "nights": 15,
+          "operator": "Biblio Globus",
+          "hotel_id": 1055,
+          "hotel_name": "Grand Azure Resort Side",
+          "stars": 3,
+          "rating": 4.1,
+          "meal": "RO",
+          "room": "Family Room",
+          "country_name": "Turkey",
+          "city_name": "Side",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_06.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "1b3aeb5250a03bd21aa4f4e70c810ca881869517e11a86065bffc5426df457ee"
+          }
+        },
+        {
+          "price": 93600,
+          "currency": "RUB",
+          "date_from": "2026-06-16",
+          "nights": 15,
+          "operator": "Pegas",
+          "hotel_id": 1057,
+          "hotel_name": "Marina Crown Resort Alanya",
+          "stars": 3,
+          "rating": 4.1,
+          "meal": "RO",
+          "room": "Standard",
+          "country_name": "Turkey",
+          "city_name": "Alanya",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_08.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "1b3aeb5250a03bd21aa4f4e70c810ca881869517e11a86065bffc5426df457ee"
+          }
+        },
+        {
+          "price": 97600,
+          "currency": "RUB",
+          "date_from": "2026-06-02",
+          "nights": 15,
+          "operator": "Tez Tour",
+          "hotel_id": 1000,
+          "hotel_name": "Vista Mare Resort Belek",
+          "stars": 3,
+          "rating": 3.1,
+          "meal": "RO",
+          "room": "Standard",
+          "country_name": "Turkey",
+          "city_name": "Belek",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_03.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "1b3aeb5250a03bd21aa4f4e70c810ca881869517e11a86065bffc5426df457ee"
+          }
+        },
+        {
+          "price": 100700,
+          "currency": "RUB",
+          "date_from": "2026-06-12",
+          "nights": 15,
+          "operator": "Biblio Globus",
+          "hotel_id": 1073,
+          "hotel_name": "Asteria Resort Alanya",
+          "stars": 3,
+          "rating": 3.4,
+          "meal": "HB",
+          "room": "Junior Suite",
+          "country_name": "Turkey",
+          "city_name": "Alanya",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_04.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "1b3aeb5250a03bd21aa4f4e70c810ca881869517e11a86065bffc5426df457ee"
+          }
+        },
+        {
+          "price": 104000,
+          "currency": "RUB",
+          "date_from": "2026-06-01",
+          "nights": 15,
+          "operator": "Pegas",
+          "hotel_id": 1017,
+          "hotel_name": "Asteria Resort Side",
+          "stars": 3,
+          "rating": 3,
+          "meal": "HB",
+          "room": "Suite",
+          "country_name": "Turkey",
+          "city_name": "Side",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_07.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "1b3aeb5250a03bd21aa4f4e70c810ca881869517e11a86065bffc5426df457ee"
+          }
+        }
+      ],
+      "lastRequestId": "mock-4fcc369c7f3f"
+    }
+  }
+}

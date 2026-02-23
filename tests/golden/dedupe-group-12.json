@@ -1,0 +1,1515 @@
+{
+  "g12_01": {
+    "messages": [
+      "🔎 Анализирую запрос…",
+      "Нашла 5 туров. Показываю все.",
+      "<b>Crystal Bay Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>60 300 ₽</b>\n🧳 Pegas",
+      "<b>Vista Mare Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 18.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 000 ₽</b>\n🧳 Coral",
+      "<b>Sunwave Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.0\n📅 25.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>70 600 ₽</b>\n🧳 Anex",
+      "<b>Imperial Sands Resort Side</b>\n📍 🇹🇷 Turkey, Side\n📅 10.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>70 800 ₽</b>\n🧳 Anex",
+      "<b>Crystal Bay Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 01.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 100 ₽</b>\n🧳 Tez Tour",
+      "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+      "Действия:",
+      "Минутку, проверяю наличие и цену…",
+      "<b>Вы выбрали:</b>\nCrystal Bay Resort Belek\n🇹🇷 Turkey, Belek\n11.07.2026 • 7 ночей\nБез питания\n<b>60 300 ₽</b>",
+      "Отличный выбор ✨ Чтобы быстро проверить наличие и финальную цену — оставьте номер.",
+      "Напишите номер сообщением (пример: +79991234567) или нажмите «Отмена».",
+      "Уже проверяю этот тур ✅"
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "🔎 Анализирую запрос…"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Нашла 5 туров. Показываю все."
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Crystal Bay Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>60 300 ₽</b>\n🧳 Pegas",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1011"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1011"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Vista Mare Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 18.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 000 ₽</b>\n🧳 Coral",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1050"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1050"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Sunwave Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.0\n📅 25.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>70 600 ₽</b>\n🧳 Anex",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1057"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1057"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Imperial Sands Resort Side</b>\n📍 🇹🇷 Turkey, Side\n📅 10.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>70 800 ₽</b>\n🧳 Anex",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1001"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1001"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Crystal Bay Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 01.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 100 ₽</b>\n🧳 Tez Tour",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1006"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1006"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Действия:",
+        "keyboard": [
+          [
+            {
+              "text": "🔁 Показать ещё",
+              "callback_data": "more:mock-adca21747853"
+            },
+            {
+              "text": "⚙️ Изменить фильтры",
+              "callback_data": "filters"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Избранное",
+              "callback_data": "fav:list"
+            }
+          ],
+          [
+            {
+              "text": "🔎 Новый поиск",
+              "callback_data": "new"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "answerCallbackQuery",
+        "callbackData": "cbq-2"
+      },
+      {
+        "method": "sendChatAction",
+        "chatAction": "typing"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Минутку, проверяю наличие и цену…"
+      },
+      {
+        "method": "sendMessage",
+        "text": "<b>Вы выбрали:</b>\nCrystal Bay Resort Belek\n🇹🇷 Turkey, Belek\n11.07.2026 • 7 ночей\nБез питания\n<b>60 300 ₽</b>"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Отличный выбор ✨ Чтобы быстро проверить наличие и финальную цену — оставьте номер."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Напишите номер сообщением (пример: +79991234567) или нажмите «Отмена»."
+      },
+      {
+        "method": "answerCallbackQuery",
+        "callbackData": "cbq-3"
+      },
+      {
+        "method": "sendChatAction",
+        "chatAction": "typing"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Уже проверяю этот тур ✅"
+      }
+    ],
+    "finalState": {
+      "step": "await_phone",
+      "countryId": 47,
+      "nightsMin": 7,
+      "nightsMax": 7,
+      "budgetMax": 120000,
+      "meal": "ANY",
+      "offset": 0,
+      "limit": 5,
+      "lastRequestId": "mock-adca21747853",
+      "lastSearchArgs": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "aiMode": false,
+      "aiAwaiting": null,
+      "activeSearchSeq": 1,
+      "searchContext": {
+        "countryId": 47,
+        "countryName": "Турция",
+        "dateFrom": "2026-07-01",
+        "dateTo": "2026-07-31",
+        "nightsMin": 7,
+        "nightsMax": 7,
+        "budgetMax": 120000,
+        "meal": "ANY",
+        "ratingMin": 0,
+        "adults": 2,
+        "children": 0,
+        "lastArgs": {
+          "country_id": 47,
+          "departure_id": 1,
+          "date_from": "2026-07-01",
+          "date_to": "2026-07-31",
+          "nights_min": 7,
+          "nights_max": 7,
+          "adults": 2,
+          "children": 0,
+          "country_name": "Turkey",
+          "budget_max": 120000,
+          "meal": 0,
+          "rating": 0,
+          "limit": 5,
+          "offset": 0,
+          "sort": "price_asc"
+        },
+        "lastResults": [
+          {
+            "price": 60300,
+            "currency": "RUB",
+            "date_from": "2026-07-11",
+            "nights": 7,
+            "operator": "Pegas",
+            "hotel_id": 1011,
+            "hotel_name": "Crystal Bay Resort Belek",
+            "stars": 3,
+            "rating": 3.3,
+            "meal": "RO",
+            "room": "Suite",
+            "country_name": "Turkey",
+            "city_name": "Belek",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_02.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "46af209598267682e0d89056d425a75a1fe63e48da27c3091b92b4453c2e9857"
+            }
+          },
+          {
+            "price": 69000,
+            "currency": "RUB",
+            "date_from": "2026-07-18",
+            "nights": 7,
+            "operator": "Coral",
+            "hotel_id": 1050,
+            "hotel_name": "Vista Mare Resort Side",
+            "stars": 3,
+            "rating": 3,
+            "meal": "RO",
+            "room": "Deluxe",
+            "country_name": "Turkey",
+            "city_name": "Side",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_07.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "46af209598267682e0d89056d425a75a1fe63e48da27c3091b92b4453c2e9857"
+            }
+          },
+          {
+            "price": 70600,
+            "currency": "RUB",
+            "date_from": "2026-07-25",
+            "nights": 7,
+            "operator": "Anex",
+            "hotel_id": 1057,
+            "hotel_name": "Sunwave Resort Kemer",
+            "stars": 3,
+            "rating": 3,
+            "meal": "HB",
+            "room": "Standard",
+            "country_name": "Turkey",
+            "city_name": "Kemer",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_03.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "46af209598267682e0d89056d425a75a1fe63e48da27c3091b92b4453c2e9857"
+            }
+          },
+          {
+            "price": 70800,
+            "currency": "RUB",
+            "date_from": "2026-07-10",
+            "nights": 7,
+            "operator": "Anex",
+            "hotel_id": 1001,
+            "hotel_name": "Imperial Sands Resort Side",
+            "stars": 3,
+            "meal": "BB",
+            "room": "Family Room",
+            "country_name": "Turkey",
+            "city_name": "Side",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_05.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "46af209598267682e0d89056d425a75a1fe63e48da27c3091b92b4453c2e9857"
+            }
+          },
+          {
+            "price": 71100,
+            "currency": "RUB",
+            "date_from": "2026-07-01",
+            "nights": 7,
+            "operator": "Tez Tour",
+            "hotel_id": 1006,
+            "hotel_name": "Crystal Bay Resort Alanya",
+            "stars": 3,
+            "rating": 3.4,
+            "meal": "HB",
+            "room": "Superior",
+            "country_name": "Turkey",
+            "city_name": "Alanya",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_04.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "46af209598267682e0d89056d425a75a1fe63e48da27c3091b92b4453c2e9857"
+            }
+          }
+        ],
+        "lastRequestId": "mock-adca21747853"
+      }
+    }
+  },
+  "g12_02": {
+    "messages": [
+      "🔎 Анализирую запрос…",
+      "Нашла 5 туров. Показываю все.",
+      "<b>Imperial Sands Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>81 400 ₽</b>\n🧳 Tez Tour",
+      "<b>Imperial Sands Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 4.1\n📅 22.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Junior Suite\n💸 <b>90 400 ₽</b>\n🧳 TUI",
+      "<b>Vista Mare Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.9\n📅 24.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Suite\n💸 <b>96 910 ₽</b>\n🧳 Coral",
+      "<b>Blue Horizon Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.8\n📅 02.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Superior\n💸 <b>106 200 ₽</b>\n🧳 Tez Tour",
+      "<b>Blue Horizon Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 4.0\n📅 08.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Family Room\n💸 <b>109 900 ₽</b>\n🧳 Biblio Globus",
+      "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+      "Действия:",
+      "Обновляю поиск по вашему уточнению ✨",
+      "Нашла 5 туров. Показываю все.",
+      "<b>Marina Crown Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.1\n📅 27.09.2026 • 7 ночей\n🍽 Всё включено • 🛏 Junior Suite\n💸 <b>74 200 ₽</b>\n🧳 Fun&amp;Sun",
+      "<b>Vista Mare Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.1\n📅 19.09.2026 • 7 ночей\n🍽 Всё включено • 🛏 Suite\n💸 <b>89 300 ₽</b>\n🧳 Coral",
+      "<b>Asteria Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.5\n📅 10.09.2026 • 7 ночей\n🍽 Всё включено • 🛏 Standard\n💸 <b>95 100 ₽</b>\n🧳 Pegas",
+      "<b>Luna Coast Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 4.0\n📅 10.09.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>97 700 ₽</b>\n🧳 Anex",
+      "<b>Blue Horizon Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.5\n📅 07.09.2026 • 7 ночей\n🍽 Всё включено • 🛏 Superior\n💸 <b>98 400 ₽</b>\n🧳 TUI",
+      "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+      "Действия:",
+      "Обновляю поиск по вашему уточнению ✨",
+      "Нашла 5 туров. Показываю все.",
+      "<b>Grand Azure Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.7\n📅 19.11.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>89 080 ₽</b>\n🧳 Anex",
+      "<b>Asteria Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.6\n📅 01.11.2026 • 7 ночей\n🍽 Всё включено • 🛏 Junior Suite\n💸 <b>92 770 ₽</b>\n🧳 Tez Tour",
+      "<b>Sunwave Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 4.1\n📅 22.11.2026 • 7 ночей\n🍽 Всё включено • 🛏 Family Room\n💸 <b>93 100 ₽</b>\n🧳 Coral",
+      "<b>Sea Breeze Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 4.2\n📅 07.11.2026 • 7 ночей\n🍽 Всё включено • 🛏 Family Room\n💸 <b>105 490 ₽</b>\n🧳 Coral",
+      "<b>Royal Palm Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 4.6\n📅 01.11.2026 • 7 ночей\n🍽 Всё включено • 🛏 Junior Suite\n💸 <b>106 900 ₽</b>\n🧳 TUI",
+      "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+      "Действия:"
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "🔎 Анализирую запрос…"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Нашла 5 туров. Показываю все."
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Imperial Sands Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>81 400 ₽</b>\n🧳 Tez Tour",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-7b5ab05d9bd6:1021"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1021"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Imperial Sands Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 4.1\n📅 22.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Junior Suite\n💸 <b>90 400 ₽</b>\n🧳 TUI",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-7b5ab05d9bd6:1007"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1007"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Vista Mare Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.9\n📅 24.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Suite\n💸 <b>96 910 ₽</b>\n🧳 Coral",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-7b5ab05d9bd6:1017"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1017"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Blue Horizon Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.8\n📅 02.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Superior\n💸 <b>106 200 ₽</b>\n🧳 Tez Tour",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-7b5ab05d9bd6:1004"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1004"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Blue Horizon Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 4.0\n📅 08.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Family Room\n💸 <b>109 900 ₽</b>\n🧳 Biblio Globus",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-7b5ab05d9bd6:1013"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1013"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Действия:",
+        "keyboard": [
+          [
+            {
+              "text": "🔁 Показать ещё",
+              "callback_data": "more:mock-7b5ab05d9bd6"
+            },
+            {
+              "text": "⚙️ Изменить фильтры",
+              "callback_data": "filters"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Избранное",
+              "callback_data": "fav:list"
+            }
+          ],
+          [
+            {
+              "text": "🔎 Новый поиск",
+              "callback_data": "new"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Обновляю поиск по вашему уточнению ✨"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Нашла 5 туров. Показываю все."
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Marina Crown Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.1\n📅 27.09.2026 • 7 ночей\n🍽 Всё включено • 🛏 Junior Suite\n💸 <b>74 200 ₽</b>\n🧳 Fun&amp;Sun",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-580a728db350:1005"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1005"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Vista Mare Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.1\n📅 19.09.2026 • 7 ночей\n🍽 Всё включено • 🛏 Suite\n💸 <b>89 300 ₽</b>\n🧳 Coral",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-580a728db350:1042"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1042"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Asteria Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.5\n📅 10.09.2026 • 7 ночей\n🍽 Всё включено • 🛏 Standard\n💸 <b>95 100 ₽</b>\n🧳 Pegas",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-580a728db350:1051"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1051"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Luna Coast Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 4.0\n📅 10.09.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>97 700 ₽</b>\n🧳 Anex",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-580a728db350:1066"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1066"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Blue Horizon Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.5\n📅 07.09.2026 • 7 ночей\n🍽 Всё включено • 🛏 Superior\n💸 <b>98 400 ₽</b>\n🧳 TUI",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-580a728db350:1044"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1044"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Действия:",
+        "keyboard": [
+          [
+            {
+              "text": "🔁 Показать ещё",
+              "callback_data": "more:mock-580a728db350"
+            },
+            {
+              "text": "⚙️ Изменить фильтры",
+              "callback_data": "filters"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Избранное",
+              "callback_data": "fav:list"
+            }
+          ],
+          [
+            {
+              "text": "🔎 Новый поиск",
+              "callback_data": "new"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Обновляю поиск по вашему уточнению ✨"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Нашла 5 туров. Показываю все."
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Grand Azure Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.7\n📅 19.11.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>89 080 ₽</b>\n🧳 Anex",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-a435d7adca33:1070"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1070"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Asteria Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.6\n📅 01.11.2026 • 7 ночей\n🍽 Всё включено • 🛏 Junior Suite\n💸 <b>92 770 ₽</b>\n🧳 Tez Tour",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-a435d7adca33:1053"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1053"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Sunwave Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 4.1\n📅 22.11.2026 • 7 ночей\n🍽 Всё включено • 🛏 Family Room\n💸 <b>93 100 ₽</b>\n🧳 Coral",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-a435d7adca33:1026"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1026"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Sea Breeze Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 4.2\n📅 07.11.2026 • 7 ночей\n🍽 Всё включено • 🛏 Family Room\n💸 <b>105 490 ₽</b>\n🧳 Coral",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-a435d7adca33:1056"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1056"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Royal Palm Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 4.6\n📅 01.11.2026 • 7 ночей\n🍽 Всё включено • 🛏 Junior Suite\n💸 <b>106 900 ₽</b>\n🧳 TUI",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-a435d7adca33:1008"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1008"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Действия:",
+        "keyboard": [
+          [
+            {
+              "text": "🔁 Показать ещё",
+              "callback_data": "more:mock-a435d7adca33"
+            },
+            {
+              "text": "⚙️ Изменить фильтры",
+              "callback_data": "filters"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Избранное",
+              "callback_data": "fav:list"
+            }
+          ],
+          [
+            {
+              "text": "🔎 Новый поиск",
+              "callback_data": "new"
+            }
+          ]
+        ]
+      }
+    ],
+    "finalState": {
+      "step": "idle",
+      "countryId": 47,
+      "nightsMin": 7,
+      "nightsMax": 7,
+      "budgetMax": 120000,
+      "meal": "AI",
+      "offset": 0,
+      "limit": 5,
+      "lastRequestId": "mock-a435d7adca33",
+      "lastSearchArgs": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-11-01",
+        "date_to": "2026-11-30",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "meal": "AI",
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "aiMode": false,
+      "aiAwaiting": null,
+      "activeSearchSeq": 1,
+      "searchContext": {
+        "countryId": 47,
+        "countryName": "Турция",
+        "dateFrom": "2026-11-01",
+        "dateTo": "2026-11-30",
+        "nightsMin": 7,
+        "nightsMax": 7,
+        "budgetMax": 120000,
+        "meal": "AI",
+        "ratingMin": 0,
+        "adults": 2,
+        "children": 0,
+        "lastArgs": {
+          "country_id": 47,
+          "departure_id": 1,
+          "date_from": "2026-11-01",
+          "date_to": "2026-11-30",
+          "nights_min": 7,
+          "nights_max": 7,
+          "adults": 2,
+          "children": 0,
+          "country_name": "Turkey",
+          "budget_max": 120000,
+          "meal": "AI",
+          "rating": 0,
+          "limit": 5,
+          "offset": 0,
+          "sort": "price_asc"
+        },
+        "lastResults": [
+          {
+            "price": 89080,
+            "currency": "RUB",
+            "date_from": "2026-11-19",
+            "nights": 7,
+            "operator": "Anex",
+            "hotel_id": 1070,
+            "hotel_name": "Grand Azure Resort Antalya",
+            "stars": 3,
+            "rating": 3.7,
+            "meal": "AI",
+            "room": "Deluxe",
+            "country_name": "Turkey",
+            "city_name": "Antalya",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_06.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "e2d7bc7d4b1f890b4d912d42dbb30b65f75f2b24ccf392873a2a39ce649b05af"
+            }
+          },
+          {
+            "price": 92770,
+            "currency": "RUB",
+            "date_from": "2026-11-01",
+            "nights": 7,
+            "operator": "Tez Tour",
+            "hotel_id": 1053,
+            "hotel_name": "Asteria Resort Antalya",
+            "stars": 3,
+            "rating": 3.6,
+            "meal": "AI",
+            "room": "Junior Suite",
+            "country_name": "Turkey",
+            "city_name": "Antalya",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_08.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "e2d7bc7d4b1f890b4d912d42dbb30b65f75f2b24ccf392873a2a39ce649b05af"
+            }
+          },
+          {
+            "price": 93100,
+            "currency": "RUB",
+            "date_from": "2026-11-22",
+            "nights": 7,
+            "operator": "Coral",
+            "hotel_id": 1026,
+            "hotel_name": "Sunwave Side",
+            "stars": 3,
+            "rating": 4.1,
+            "meal": "AI",
+            "room": "Family Room",
+            "country_name": "Turkey",
+            "city_name": "Side",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_05.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "e2d7bc7d4b1f890b4d912d42dbb30b65f75f2b24ccf392873a2a39ce649b05af"
+            }
+          },
+          {
+            "price": 105490,
+            "currency": "RUB",
+            "date_from": "2026-11-07",
+            "nights": 7,
+            "operator": "Coral",
+            "hotel_id": 1056,
+            "hotel_name": "Sea Breeze Resort Antalya",
+            "stars": 4,
+            "rating": 4.2,
+            "meal": "AI",
+            "room": "Family Room",
+            "country_name": "Turkey",
+            "city_name": "Antalya",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_04.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "e2d7bc7d4b1f890b4d912d42dbb30b65f75f2b24ccf392873a2a39ce649b05af"
+            }
+          },
+          {
+            "price": 106900,
+            "currency": "RUB",
+            "date_from": "2026-11-01",
+            "nights": 7,
+            "operator": "TUI",
+            "hotel_id": 1008,
+            "hotel_name": "Royal Palm Resort Side",
+            "stars": 4,
+            "rating": 4.6,
+            "meal": "AI",
+            "room": "Junior Suite",
+            "country_name": "Turkey",
+            "city_name": "Side",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_01.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "e2d7bc7d4b1f890b4d912d42dbb30b65f75f2b24ccf392873a2a39ce649b05af"
+            }
+          }
+        ],
+        "lastRequestId": "mock-a435d7adca33"
+      }
+    }
+  },
+  "g12_03": {
+    "messages": [
+      "Привет. Я AI-ассистент по подбору туров ✨\nМогу провести вас по шагам или понять запрос в свободной форме.\n\nНапример:\nТурция на 7 ночей до 120 000 ₽, всё включено",
+      "Выберите страну для отдыха:",
+      "Какой бюджет на тур на двоих?"
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "Привет. Я AI-ассистент по подбору туров ✨\nМогу провести вас по шагам или понять запрос в свободной форме.\n\nНапример:\nТурция на 7 ночей до 120 000 ₽, всё включено",
+        "keyboard": [
+          [
+            {
+              "text": "🔎 Найти тур",
+              "callback_data": "start_search"
+            },
+            {
+              "text": "🌍 Страны",
+              "callback_data": "show_countries"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Избранное",
+              "callback_data": "fav:list"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "answerCallbackQuery",
+        "callbackData": "cbq-2"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Выберите страну для отдыха:",
+        "keyboard": [
+          [
+            {
+              "text": "Турция 🇹🇷",
+              "callback_data": "country:47"
+            },
+            {
+              "text": "Египет 🇪🇬",
+              "callback_data": "country:54"
+            },
+            {
+              "text": "Таиланд 🇹🇭",
+              "callback_data": "country:29"
+            }
+          ],
+          [
+            {
+              "text": "ОАЭ 🇦🇪",
+              "callback_data": "country:63"
+            },
+            {
+              "text": "Мальдивы 🇲🇻",
+              "callback_data": "country:90"
+            },
+            {
+              "text": "Сейшелы 🇸🇨",
+              "callback_data": "country:91"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "answerCallbackQuery",
+        "callbackData": "cbq-3"
+      },
+      {
+        "method": "sendChatAction",
+        "chatAction": "typing"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Какой бюджет на тур на двоих?",
+        "keyboard": [
+          [
+            {
+              "text": "100k",
+              "callback_data": "budget:100000"
+            },
+            {
+              "text": "150k",
+              "callback_data": "budget:150000"
+            },
+            {
+              "text": "250k",
+              "callback_data": "budget:250000"
+            }
+          ]
+        ]
+      }
+    ],
+    "finalState": {
+      "step": "idle",
+      "countryId": 47,
+      "nightsMin": 6,
+      "nightsMax": 10,
+      "meal": "ANY",
+      "offset": 0,
+      "limit": 5,
+      "aiMode": false,
+      "aiAwaiting": null
+    }
+  },
+  "g12_04": {
+    "messages": [
+      "🔎 Анализирую запрос…",
+      "Нашла 5 туров. Показываю все.",
+      "<b>Crystal Bay Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>60 300 ₽</b>\n🧳 Pegas",
+      "<b>Vista Mare Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 18.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 000 ₽</b>\n🧳 Coral",
+      "<b>Sunwave Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.0\n📅 25.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>70 600 ₽</b>\n🧳 Anex",
+      "<b>Imperial Sands Resort Side</b>\n📍 🇹🇷 Turkey, Side\n📅 10.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>70 800 ₽</b>\n🧳 Anex",
+      "<b>Crystal Bay Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 01.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 100 ₽</b>\n🧳 Tez Tour",
+      "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+      "Действия:",
+      "Фильтры: Турция • до 120 000 ₽ • июл 2026",
+      "Нашла 10 туров. Показываю 5 самых выгодных.",
+      "<b>Coral Elite Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.5\n📅 16.06.2026 • 7 ночей\n🍽 Завтраки • 🛏 Junior Suite\n💸 <b>71 900 ₽</b>\n🧳 Tez Tour",
+      "<b>Grand Azure Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.5\n📅 07.06.2026 • 7 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>73 190 ₽</b>\n🧳 Fun&amp;Sun",
+      "<b>Crystal Bay Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.6\n📅 05.06.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Family Room\n💸 <b>74 900 ₽</b>\n🧳 Pegas",
+      "<b>Imperial Sands Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.1\n📅 08.06.2026 • 7 ночей\n🍽 Завтраки • 🛏 Deluxe\n💸 <b>75 500 ₽</b>\n🧳 Fun&amp;Sun",
+      "<b>Sunwave Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.8\n📅 08.06.2026 • 7 ночей\n🍽 3-разовое питание • 🛏 Standard\n💸 <b>75 800 ₽</b>\n🧳 Fun&amp;Sun",
+      "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+      "Действия:"
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "🔎 Анализирую запрос…"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Нашла 5 туров. Показываю все."
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Crystal Bay Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>60 300 ₽</b>\n🧳 Pegas",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1011"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1011"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Vista Mare Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 18.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 000 ₽</b>\n🧳 Coral",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1050"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1050"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Sunwave Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.0\n📅 25.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>70 600 ₽</b>\n🧳 Anex",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1057"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1057"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Imperial Sands Resort Side</b>\n📍 🇹🇷 Turkey, Side\n📅 10.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>70 800 ₽</b>\n🧳 Anex",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1001"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1001"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Crystal Bay Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 01.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 100 ₽</b>\n🧳 Tez Tour",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1006"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1006"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Действия:",
+        "keyboard": [
+          [
+            {
+              "text": "🔁 Показать ещё",
+              "callback_data": "more:mock-adca21747853"
+            },
+            {
+              "text": "⚙️ Изменить фильтры",
+              "callback_data": "filters"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Избранное",
+              "callback_data": "fav:list"
+            }
+          ],
+          [
+            {
+              "text": "🔎 Новый поиск",
+              "callback_data": "new"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "answerCallbackQuery",
+        "callbackData": "cbq-2"
+      },
+      {
+        "method": "sendChatAction",
+        "chatAction": "typing"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Фильтры: Турция • до 120 000 ₽ • июл 2026"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Нашла 10 туров. Показываю 5 самых выгодных."
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Coral Elite Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.5\n📅 16.06.2026 • 7 ночей\n🍽 Завтраки • 🛏 Junior Suite\n💸 <b>71 900 ₽</b>\n🧳 Tez Tour",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-1891f2ffdf19:1014"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1014"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Grand Azure Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.5\n📅 07.06.2026 • 7 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>73 190 ₽</b>\n🧳 Fun&amp;Sun",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-1891f2ffdf19:1080"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1080"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Crystal Bay Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.6\n📅 05.06.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Family Room\n💸 <b>74 900 ₽</b>\n🧳 Pegas",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-1891f2ffdf19:1025"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1025"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Imperial Sands Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.1\n📅 08.06.2026 • 7 ночей\n🍽 Завтраки • 🛏 Deluxe\n💸 <b>75 500 ₽</b>\n🧳 Fun&amp;Sun",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-1891f2ffdf19:1040"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1040"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Sunwave Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.8\n📅 08.06.2026 • 7 ночей\n🍽 3-разовое питание • 🛏 Standard\n💸 <b>75 800 ₽</b>\n🧳 Fun&amp;Sun",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-1891f2ffdf19:1085"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1085"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Действия:",
+        "keyboard": [
+          [
+            {
+              "text": "🔁 Показать ещё",
+              "callback_data": "more:mock-1891f2ffdf19"
+            },
+            {
+              "text": "⚙️ Изменить фильтры",
+              "callback_data": "filters"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Избранное",
+              "callback_data": "fav:list"
+            }
+          ],
+          [
+            {
+              "text": "🔎 Новый поиск",
+              "callback_data": "new"
+            }
+          ]
+        ]
+      }
+    ],
+    "finalState": {
+      "step": "idle",
+      "countryId": 47,
+      "nightsMin": 7,
+      "nightsMax": 7,
+      "budgetMax": 120000,
+      "meal": "ANY",
+      "offset": 5,
+      "limit": 5,
+      "lastRequestId": "mock-1891f2ffdf19",
+      "lastSearchArgs": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-06-01",
+        "date_to": "2026-06-20",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 5,
+        "sort": "price_asc"
+      },
+      "aiMode": false,
+      "aiAwaiting": null,
+      "activeSearchSeq": 2,
+      "searchContext": {
+        "countryId": 47,
+        "countryName": "Турция",
+        "dateFrom": "2026-06-01",
+        "dateTo": "2026-06-20",
+        "nightsMin": 7,
+        "nightsMax": 7,
+        "budgetMax": 120000,
+        "meal": "ANY",
+        "ratingMin": 0,
+        "adults": 2,
+        "children": 0,
+        "lastArgs": {
+          "country_id": 47,
+          "departure_id": 1,
+          "date_from": "2026-06-01",
+          "date_to": "2026-06-20",
+          "nights_min": 7,
+          "nights_max": 7,
+          "adults": 2,
+          "children": 0,
+          "budget_max": 120000,
+          "meal": 0,
+          "rating": 0,
+          "limit": 5,
+          "offset": 5,
+          "sort": "price_asc"
+        },
+        "lastResults": [
+          {
+            "price": 71900,
+            "currency": "RUB",
+            "date_from": "2026-06-16",
+            "nights": 7,
+            "operator": "Tez Tour",
+            "hotel_id": 1014,
+            "hotel_name": "Coral Elite Resort Alanya",
+            "stars": 3,
+            "rating": 3.5,
+            "meal": "BB",
+            "room": "Junior Suite",
+            "country_name": "Turkey",
+            "city_name": "Alanya",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_05.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "6ebc486ae12e6b67bdcd5c05ae1e1bf3647f0fbd9d15a651c1c11e3442549fc9"
+            }
+          },
+          {
+            "price": 73190,
+            "currency": "RUB",
+            "date_from": "2026-06-07",
+            "nights": 7,
+            "operator": "Fun&Sun",
+            "hotel_id": 1080,
+            "hotel_name": "Grand Azure Kemer",
+            "stars": 3,
+            "rating": 3.5,
+            "meal": "BB",
+            "room": "Suite",
+            "country_name": "Turkey",
+            "city_name": "Kemer",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_02.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "6ebc486ae12e6b67bdcd5c05ae1e1bf3647f0fbd9d15a651c1c11e3442549fc9"
+            }
+          },
+          {
+            "price": 74900,
+            "currency": "RUB",
+            "date_from": "2026-06-05",
+            "nights": 7,
+            "operator": "Pegas",
+            "hotel_id": 1025,
+            "hotel_name": "Crystal Bay Belek",
+            "stars": 3,
+            "rating": 3.6,
+            "meal": "HB",
+            "room": "Family Room",
+            "country_name": "Turkey",
+            "city_name": "Belek",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_06.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "6ebc486ae12e6b67bdcd5c05ae1e1bf3647f0fbd9d15a651c1c11e3442549fc9"
+            }
+          },
+          {
+            "price": 75500,
+            "currency": "RUB",
+            "date_from": "2026-06-08",
+            "nights": 7,
+            "operator": "Fun&Sun",
+            "hotel_id": 1040,
+            "hotel_name": "Imperial Sands Alanya",
+            "stars": 3,
+            "rating": 3.1,
+            "meal": "BB",
+            "room": "Deluxe",
+            "country_name": "Turkey",
+            "city_name": "Alanya",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_07.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "6ebc486ae12e6b67bdcd5c05ae1e1bf3647f0fbd9d15a651c1c11e3442549fc9"
+            }
+          },
+          {
+            "price": 75800,
+            "currency": "RUB",
+            "date_from": "2026-06-08",
+            "nights": 7,
+            "operator": "Fun&Sun",
+            "hotel_id": 1085,
+            "hotel_name": "Sunwave Resort Alanya",
+            "stars": 3,
+            "rating": 3.8,
+            "meal": "FB",
+            "room": "Standard",
+            "country_name": "Turkey",
+            "city_name": "Alanya",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_08.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "6ebc486ae12e6b67bdcd5c05ae1e1bf3647f0fbd9d15a651c1c11e3442549fc9"
+            }
+          }
+        ],
+        "lastRequestId": "mock-1891f2ffdf19"
+      }
+    }
+  }
+}

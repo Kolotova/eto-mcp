@@ -1,0 +1,952 @@
+{
+  "g03_01": {
+    "meta": {
+      "intent_type": "unknown",
+      "provider": "mock",
+      "validation": "ok",
+      "reason": "unsupported_country"
+    },
+    "text": "Пока могу искать только по: Турция, Египет, Таиланд, ОАЭ, Мальдивы, Сейшелы. Какую выбираете?"
+  },
+  "g03_02": {
+    "meta": {
+      "intent_type": "unknown",
+      "provider": "mock",
+      "validation": "ok",
+      "reason": "unsupported_country"
+    },
+    "text": "Пока могу искать только по: Турция, Египет, Таиланд, ОАЭ, Мальдивы, Сейшелы. Какую выбираете?"
+  },
+  "g03_03": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "missing_fields": [
+        "nights",
+        "budget"
+      ],
+      "draft_args": {
+        "country_name": "Turkey",
+        "country_id": 47
+      }
+    },
+    "text": ""
+  },
+  "g03_04": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "reason": "not_enough_data",
+      "missing_fields": [
+        "nights",
+        "budget"
+      ],
+      "draft_args": {
+        "country_name": "Thailand",
+        "country_id": 29
+      }
+    },
+    "text": ""
+  },
+  "g03_05": {
+    "meta": {
+      "intent_type": "unknown",
+      "provider": "mock",
+      "validation": "ok",
+      "reason": "unsupported_country"
+    },
+    "text": "Пока могу искать только по: Турция, Египет, Таиланд, ОАЭ, Мальдивы, Сейшелы. Какую выбираете?"
+  },
+  "g03_06": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 47,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g04_01": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "missing_fields": [
+        "budget"
+      ],
+      "draft_args": {
+        "country_name": "Turkey",
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 47,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g04_02": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "missing_fields": [
+        "budget"
+      ],
+      "draft_args": {
+        "country_name": "Turkey",
+        "country_id": 47,
+        "nights_min": 7,
+        "nights_max": 7
+      }
+    },
+    "text": ""
+  },
+  "g04_03": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 54,
+        "departure_id": 1,
+        "date_from": "2026-10-01",
+        "date_to": "2026-10-31",
+        "nights_min": 10,
+        "nights_max": 10,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Egypt",
+        "budget_max": 100000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Egypt",
+        "budget_max": 100000,
+        "country_id": 54,
+        "nights_min": 10,
+        "nights_max": 10,
+        "date_from": "2026-10-01",
+        "date_to": "2026-10-31"
+      }
+    },
+    "text": ""
+  },
+  "g04_04": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "missing_fields": [
+        "budget"
+      ],
+      "draft_args": {
+        "country_name": "Maldives",
+        "country_id": 90,
+        "nights_min": 14,
+        "nights_max": 14
+      }
+    },
+    "text": ""
+  },
+  "g04_05": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "reason": "not_enough_data",
+      "missing_fields": [
+        "budget"
+      ],
+      "draft_args": {
+        "country_name": "Thailand",
+        "country_id": 29,
+        "nights_min": 3,
+        "nights_max": 3
+      }
+    },
+    "text": ""
+  },
+  "g04_06": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "missing_fields": [
+        "nights",
+        "budget"
+      ],
+      "draft_args": {
+        "country_name": "Turkey",
+        "country_id": 47
+      }
+    },
+    "text": ""
+  },
+  "g05_01": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 47,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g05_02": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_min": 108000,
+        "budget_max": 132000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Turkey",
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 47,
+        "budget_min": 108000,
+        "budget_max": 132000,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g05_03": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "missing_fields": [
+        "nights"
+      ],
+      "draft_args": {
+        "country_name": "Maldives",
+        "country_id": 90,
+        "budget_min": 90000,
+        "budget_max": 110000,
+        "date_from": "2026-09-01",
+        "date_to": "2026-09-30"
+      }
+    },
+    "text": ""
+  },
+  "g05_04": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 54,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Egypt",
+        "budget_min": 90000,
+        "budget_max": 110000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Egypt",
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 54,
+        "budget_min": 90000,
+        "budget_max": 110000,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g05_05": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "missing_fields": [
+        "nights"
+      ],
+      "draft_args": {
+        "country_name": "Egypt",
+        "country_id": 54,
+        "budget_min": 108000,
+        "budget_max": 132000
+      }
+    },
+    "text": ""
+  },
+  "g05_06": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_min": 90000,
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Turkey",
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 47,
+        "budget_min": 90000,
+        "budget_max": 120000,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g06_01": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "missing_fields": [
+        "nights",
+        "budget"
+      ],
+      "draft_args": {
+        "country_name": "Turkey",
+        "country_id": 47,
+        "date_from": "2026-09-01",
+        "date_to": "2026-09-30"
+      }
+    },
+    "text": ""
+  },
+  "g06_02": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "missing_fields": [
+        "nights",
+        "budget"
+      ],
+      "draft_args": {
+        "country_name": "Turkey",
+        "country_id": 47,
+        "budget_min": 0,
+        "budget_max": 0,
+        "date_from": "2026-09-01",
+        "date_to": "2026-09-30"
+      }
+    },
+    "text": ""
+  },
+  "g06_03": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 47,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g06_04": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-09-01",
+        "date_to": "2026-09-30",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "period": "autumn",
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 47,
+        "date_from": "2026-09-01",
+        "date_to": "2026-09-30",
+        "period": "autumn"
+      }
+    },
+    "text": ""
+  },
+  "g06_05": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "missing_fields": [
+        "nights",
+        "budget"
+      ],
+      "draft_args": {
+        "country_name": "Egypt",
+        "country_id": 54,
+        "period": "next_month"
+      }
+    },
+    "text": ""
+  },
+  "g06_06": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "reason": "not_enough_data",
+      "missing_fields": [
+        "nights"
+      ],
+      "draft_args": {
+        "country_name": "Thailand",
+        "country_id": 29,
+        "budget_min": 1,
+        "budget_max": 2,
+        "period": "1_2_months"
+      }
+    },
+    "text": ""
+  },
+  "g07_01": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "meal": "AI",
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "nights_min": 7,
+        "nights_max": 7,
+        "meal": "AI",
+        "country_id": 47,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g07_02": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 54,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Egypt",
+        "budget_max": 100000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Egypt",
+        "budget_max": 100000,
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 54,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g07_03": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 29,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Thailand",
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "budget_max": 120000,
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_name": "Thailand",
+        "country_id": 29,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g07_04": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 47,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g08_01": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "meal": "AI",
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Turkey",
+        "nights_min": 7,
+        "nights_max": 7,
+        "meal": "AI",
+        "country_id": 47,
+        "budget_max": 120000,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g08_02": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 90,
+        "departure_id": 1,
+        "date_from": "2026-09-01",
+        "date_to": "2026-09-30",
+        "nights_min": 10,
+        "nights_max": 10,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Maldives",
+        "budget_min": 90000,
+        "budget_max": 110000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Maldives",
+        "nights_min": 10,
+        "nights_max": 10,
+        "country_id": 90,
+        "budget_min": 90000,
+        "budget_max": 110000,
+        "date_from": "2026-09-01",
+        "date_to": "2026-09-30"
+      }
+    },
+    "text": ""
+  },
+  "g08_03": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 63,
+        "departure_id": 1,
+        "date_from": "2026-03-01",
+        "date_to": "2026-03-31",
+        "nights_min": 3,
+        "nights_max": 3,
+        "adults": 2,
+        "children": 0,
+        "country_name": "UAE",
+        "budget_max": 100000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "UAE",
+        "budget_max": 100000,
+        "nights_min": 3,
+        "nights_max": 3,
+        "country_id": 63,
+        "date_from": "2026-03-01",
+        "date_to": "2026-03-31"
+      }
+    },
+    "text": ""
+  },
+  "g08_04": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 54,
+        "departure_id": 1,
+        "date_from": "2026-06-01",
+        "date_to": "2026-06-20",
+        "nights_min": 3,
+        "nights_max": 3,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Egypt",
+        "budget_max": 100000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Egypt",
+        "budget_max": 100000,
+        "country_id": 54,
+        "nights_min": 3,
+        "nights_max": 3
+      }
+    },
+    "text": ""
+  },
+  "g08_05": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "reason": "not_enough_data",
+      "missing_fields": [
+        "budget"
+      ],
+      "draft_args": {
+        "country_name": "Thailand",
+        "country_id": 29,
+        "nights_min": 3,
+        "nights_max": 3
+      }
+    },
+    "text": ""
+  },
+  "g08_06": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 63,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "UAE",
+        "budget_max": 150000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "UAE",
+        "budget_max": 150000,
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 63,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  },
+  "g08_07": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 91,
+        "departure_id": 1,
+        "date_from": "2026-10-01",
+        "date_to": "2026-10-31",
+        "nights_min": 10,
+        "nights_max": 10,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Seychelles",
+        "budget_max": 250000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Seychelles",
+        "budget_max": 250000,
+        "nights_min": 10,
+        "nights_max": 10,
+        "country_id": 91,
+        "date_from": "2026-10-01",
+        "date_to": "2026-10-31"
+      }
+    },
+    "text": ""
+  },
+  "g08_08": {
+    "meta": {
+      "intent_type": "search_tours",
+      "provider": "mock",
+      "validation": "ok",
+      "search_args": {
+        "country_id": 90,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Maldives",
+        "budget_max": 100000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "missing_fields": [],
+      "draft_args": {
+        "country_name": "Maldives",
+        "budget_max": 100000,
+        "nights_min": 7,
+        "nights_max": 7,
+        "country_id": 90,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31"
+      }
+    },
+    "text": ""
+  }
+}

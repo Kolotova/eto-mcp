@@ -1,0 +1,1863 @@
+{
+  "meta": {
+    "total": 75,
+    "groups": {
+      "1": 6,
+      "2": 4,
+      "3": 6,
+      "4": 6,
+      "5": 6,
+      "6": 6,
+      "7": 4,
+      "8": 8,
+      "9": 6,
+      "10": 10,
+      "11": 5,
+      "12": 4,
+      "13": 2,
+      "14": 2
+    }
+  },
+  "cases": [
+    {
+      "id": "g01_01",
+      "group": 1,
+      "title": "/start shows intro",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "/start"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "AI-ассистент",
+          "Турция на 7 ночей"
+        ],
+        "final_state": {
+          "step": "idle"
+        }
+      },
+      "tags": [
+        "start"
+      ]
+    },
+    {
+      "id": "g01_02",
+      "group": 1,
+      "title": "cancel from idle",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "отмена"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ок, сбросила поиск",
+          "Доступные страны:"
+        ],
+        "final_state": {
+          "aiMode": true,
+          "aiAwaiting": "country"
+        }
+      },
+      "tags": [
+        "cancel"
+      ]
+    },
+    {
+      "id": "g01_03",
+      "group": 1,
+      "title": "cancel alias /cancel",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "/cancel"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ок, сбросила поиск"
+        ]
+      },
+      "tags": [
+        "cancel"
+      ]
+    },
+    {
+      "id": "g01_04",
+      "group": 1,
+      "title": "cancel from ai nights",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Привет, хочу в Турцию"
+        },
+        {
+          "type": "text",
+          "text": "стоп"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "На сколько ночей",
+          "Ок, сбросила поиск"
+        ],
+        "final_state": {
+          "aiAwaiting": "country"
+        }
+      },
+      "tags": [
+        "cancel",
+        "ai"
+      ]
+    },
+    {
+      "id": "g01_05",
+      "group": 1,
+      "title": "cancel from guided budget",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "/start"
+        },
+        {
+          "type": "callback",
+          "data": "start_search"
+        },
+        {
+          "type": "callback",
+          "data": "country:47"
+        },
+        {
+          "type": "text",
+          "text": "reset"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Какой бюджет",
+          "Ок, сбросила поиск"
+        ]
+      },
+      "tags": [
+        "cancel",
+        "guided"
+      ]
+    },
+    {
+      "id": "g01_06",
+      "group": 1,
+      "title": "cancel phrase начать заново",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "начать заново"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ок, сбросила поиск"
+        ]
+      },
+      "tags": [
+        "cancel"
+      ]
+    },
+    {
+      "id": "g02_01",
+      "group": 2,
+      "title": "/help response",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "/help"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Я подбираю туры по 6 странам",
+          "Турция на 7 ночей до 120к"
+        ]
+      },
+      "tags": [
+        "help"
+      ]
+    },
+    {
+      "id": "g02_02",
+      "group": 2,
+      "title": "smalltalk hello",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "привет"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Привет!",
+          "Турция на 7 ночей"
+        ]
+      },
+      "tags": [
+        "smalltalk"
+      ]
+    },
+    {
+      "id": "g02_03",
+      "group": 2,
+      "title": "capabilities question",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "что ты умеешь?"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Я помогу подобрать тур",
+          "Турция, Египет"
+        ]
+      },
+      "tags": [
+        "meta"
+      ]
+    },
+    {
+      "id": "g02_04",
+      "group": 2,
+      "title": "neutral thanks in ai state",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "хочу в турцию"
+        },
+        {
+          "type": "text",
+          "text": "спасибо"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "На сколько ночей",
+          "Ок"
+        ]
+      },
+      "tags": [
+        "smalltalk",
+        "state"
+      ]
+    },
+    {
+      "id": "g03_01",
+      "group": 3,
+      "title": "unsupported Africa prompt",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Покажи Африку"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Пока могу искать только",
+          "Турция"
+        ],
+        "not_contains": [
+          "Африка"
+        ]
+      },
+      "tags": [
+        "unsupported-country",
+        "required"
+      ]
+    },
+    {
+      "id": "g03_02",
+      "group": 3,
+      "title": "unsupported Africa with nights",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Африка на 7 ночей"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Пока могу искать только"
+        ]
+      },
+      "tags": [
+        "unsupported-country",
+        "required"
+      ]
+    },
+    {
+      "id": "g03_03",
+      "group": 3,
+      "title": "supported Turkey ru",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "хочу в Турцию"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Поняла: Турция",
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "country"
+      ]
+    },
+    {
+      "id": "g03_04",
+      "group": 3,
+      "title": "supported Thailand ru",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Таиланд"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Таиланд"
+        ]
+      },
+      "tags": [
+        "country"
+      ]
+    },
+    {
+      "id": "g03_05",
+      "group": 3,
+      "title": "unsupported Italy 3 days",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Италия на 3 дня"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Пока могу искать только"
+        ]
+      },
+      "tags": [
+        "unsupported-country",
+        "required"
+      ]
+    },
+    {
+      "id": "g03_06",
+      "group": 3,
+      "title": "country switch after prior search text",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к"
+        },
+        {
+          "type": "text",
+          "text": "Хочу в Сейшелы на 10 ночей"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Меняю направление на Сейшелы"
+        ]
+      },
+      "tags": [
+        "followup",
+        "country-switch"
+      ]
+    },
+    {
+      "id": "g04_01",
+      "group": 4,
+      "title": "7 nights phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция на 7 ночей"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Какой бюджет"
+        ],
+        "not_contains": [
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "nights"
+      ]
+    },
+    {
+      "id": "g04_02",
+      "group": 4,
+      "title": "week phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция на неделю"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Какой бюджет"
+        ],
+        "not_contains": [
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "nights"
+      ]
+    },
+    {
+      "id": "g04_03",
+      "group": 4,
+      "title": "10 days phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Египет на 10 дней до 100к"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ищу",
+          "Нашла"
+        ],
+        "not_contains": [
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "nights",
+        "one-shot"
+      ]
+    },
+    {
+      "id": "g04_04",
+      "group": 4,
+      "title": "two weeks phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Мальдивы на две недели"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Какой бюджет"
+        ],
+        "not_contains": [
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "nights"
+      ]
+    },
+    {
+      "id": "g04_05",
+      "group": 4,
+      "title": "weekend phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Таиланд на выходные"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Какой бюджет"
+        ],
+        "not_contains": [
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "nights",
+        "required"
+      ]
+    },
+    {
+      "id": "g04_06",
+      "group": 4,
+      "title": "nights typed while asked",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция"
+        },
+        {
+          "type": "text",
+          "text": "15"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "На сколько ночей",
+          "Какой бюджет"
+        ],
+        "final_state": {
+          "aiAwaiting": "budget"
+        }
+      },
+      "tags": [
+        "nights",
+        "typing"
+      ]
+    },
+    {
+      "id": "g05_01",
+      "group": 5,
+      "title": "budget do 120k",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ищу",
+          "Нашла"
+        ],
+        "not_contains": [
+          "Какой бюджет"
+        ]
+      },
+      "tags": [
+        "budget",
+        "one-shot"
+      ]
+    },
+    {
+      "id": "g05_02",
+      "group": 5,
+      "title": "budget raw 120000",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей 120000"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ищу"
+        ],
+        "not_contains": [
+          "Какой бюджет"
+        ]
+      },
+      "tags": [
+        "budget"
+      ]
+    },
+    {
+      "id": "g05_03",
+      "group": 5,
+      "title": "budget around 100k",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Покажи туры на Мальдивы в сентябре в районе 100000"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "budget",
+        "slot-filling",
+        "required"
+      ]
+    },
+    {
+      "id": "g05_04",
+      "group": 5,
+      "title": "budget around phrase около",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Египет около 100к на 7 ночей"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Нашла"
+        ]
+      },
+      "tags": [
+        "budget"
+      ]
+    },
+    {
+      "id": "g05_05",
+      "group": 5,
+      "title": "clarification preserves country Egypt",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Египет около 120к"
+        },
+        {
+          "type": "text",
+          "text": "около 120000"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "На сколько ночей"
+        ],
+        "not_contains": [
+          "🇹🇷 Turkey",
+          "это максимум или ориентир"
+        ],
+        "final_state": {
+          "aiAwaiting": "nights"
+        }
+      },
+      "tags": [
+        "budget",
+        "followup",
+        "required"
+      ]
+    },
+    {
+      "id": "g05_06",
+      "group": 5,
+      "title": "budget range 90-120k",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей 90–120к"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Нашла"
+        ],
+        "not_contains": [
+          "Какой бюджет"
+        ],
+        "final_state": {
+          "lastSearchArgs.country_id": 47,
+          "lastSearchArgs.nights_min": 7,
+          "lastSearchArgs.nights_max": 7,
+          "lastSearchArgs.budget_min": 90000,
+          "lastSearchArgs.budget_max": 120000
+        }
+      },
+      "tags": [
+        "budget",
+        "range",
+        "required"
+      ]
+    },
+    {
+      "id": "g06_01",
+      "group": 6,
+      "title": "September month phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Хочу в Турцию в сентябре"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "На сколько ночей"
+        ],
+        "not_contains": [
+          "Какую страну"
+        ]
+      },
+      "tags": [
+        "month"
+      ]
+    },
+    {
+      "id": "g06_02",
+      "group": 6,
+      "title": "09 month numeric",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 09"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "month"
+      ]
+    },
+    {
+      "id": "g06_03",
+      "group": 6,
+      "title": "November follow-up",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к"
+        },
+        {
+          "type": "text",
+          "text": "а в ноябре?"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Обновляю поиск"
+        ],
+        "not_contains": [
+          "Выберите страну"
+        ]
+      },
+      "tags": [
+        "followup",
+        "month",
+        "required"
+      ]
+    },
+    {
+      "id": "g06_04",
+      "group": 6,
+      "title": "Autumn phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция осенью 7 ночей до 120к"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ищу"
+        ]
+      },
+      "tags": [
+        "period"
+      ]
+    },
+    {
+      "id": "g06_05",
+      "group": 6,
+      "title": "Next month phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Египет в ближайший месяц"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "period"
+      ]
+    },
+    {
+      "id": "g06_06",
+      "group": 6,
+      "title": "1-2 months phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Таиланд через 1-2 месяца"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "period"
+      ]
+    },
+    {
+      "id": "g07_01",
+      "group": 7,
+      "title": "AI phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ищу"
+        ],
+        "not_contains": [
+          "Какое питание"
+        ]
+      },
+      "tags": [
+        "meal",
+        "required"
+      ]
+    },
+    {
+      "id": "g07_02",
+      "group": 7,
+      "title": "BB phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Египет 7 ночей до 100к завтраки"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ищу"
+        ]
+      },
+      "tags": [
+        "meal"
+      ]
+    },
+    {
+      "id": "g07_03",
+      "group": 7,
+      "title": "No meals phrase",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Таиланд 7 ночей до 120к без питания"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ищу"
+        ]
+      },
+      "tags": [
+        "meal"
+      ]
+    },
+    {
+      "id": "g07_04",
+      "group": 7,
+      "title": "followup meal refine",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к"
+        },
+        {
+          "type": "text",
+          "text": "без питания"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Обновляю поиск"
+        ],
+        "final_state": {
+          "lastSearchArgs.meal": "RO"
+        }
+      },
+      "tags": [
+        "meal",
+        "followup",
+        "required"
+      ]
+    },
+    {
+      "id": "g08_01",
+      "group": 8,
+      "title": "Турция на 7 ночей до 120 000 ₽, всё включено",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция на 7 ночей до 120 000 ₽, всё включено"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Нашла",
+          "💚 Хочу этот тур"
+        ],
+        "not_contains": [
+          "На сколько ночей",
+          "Какой бюджет"
+        ]
+      },
+      "tags": [
+        "one-shot",
+        "required"
+      ]
+    },
+    {
+      "id": "g08_02",
+      "group": 8,
+      "title": "Мальдивы сентябрь 10 ночей 100k range",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Мальдивы в сентябре в районе 100000 на 10 ночей"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Нашла",
+          "Maldives"
+        ],
+        "not_contains": [
+          "это максимум или ориентир",
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "one-shot",
+        "required"
+      ]
+    },
+    {
+      "id": "g08_03",
+      "group": 8,
+      "title": "ОАЭ 3 nights budget",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "ОАЭ 3 ночи до 100к"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Нашла"
+        ],
+        "not_contains": [
+          "Какой бюджет",
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "one-shot"
+      ]
+    },
+    {
+      "id": "g08_04",
+      "group": 8,
+      "title": "Египет на выходные до 100к",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Египет на выходные до 100к"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Нашла"
+        ],
+        "not_contains": [
+          "Фильтры: Сейшелы"
+        ],
+        "final_state": {
+          "countryId": 54,
+          "lastSearchArgs.country_id": 54,
+          "lastSearchArgs.nights_min": 3,
+          "lastSearchArgs.nights_max": 3,
+          "lastSearchArgs.budget_max": 100000
+        }
+      },
+      "tags": [
+        "one-shot",
+        "required",
+        "country"
+      ]
+    },
+    {
+      "id": "g08_05",
+      "group": 8,
+      "title": "Thailand weekends",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Таиланд на выходные"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Какой бюджет"
+        ],
+        "not_contains": [
+          "На сколько ночей"
+        ]
+      },
+      "tags": [
+        "one-shot",
+        "required"
+      ]
+    },
+    {
+      "id": "g08_06",
+      "group": 8,
+      "title": "UAE breakfasts one-shot",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "ОАЭ 7 ночей до 150к завтраки"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Нашла"
+        ]
+      },
+      "tags": [
+        "one-shot"
+      ]
+    },
+    {
+      "id": "g08_07",
+      "group": 8,
+      "title": "Seychelles one-shot",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Сейшелы 10 ночей до 250к"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Нашла"
+        ]
+      },
+      "tags": [
+        "one-shot"
+      ]
+    },
+    {
+      "id": "g08_08",
+      "group": 8,
+      "title": "Maldives low budget one-shot",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Мальдивы 7 ночей до 100к"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Нашла"
+        ]
+      },
+      "tags": [
+        "one-shot"
+      ]
+    },
+    {
+      "id": "g09_01",
+      "group": 9,
+      "title": "guided start->country->budget",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "/start"
+        },
+        {
+          "type": "callback",
+          "data": "start_search"
+        },
+        {
+          "type": "callback",
+          "data": "country:47"
+        },
+        {
+          "type": "callback",
+          "data": "budget:100000"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Какое качество отеля смотрим?"
+        ]
+      },
+      "tags": [
+        "guided"
+      ]
+    },
+    {
+      "id": "g09_02",
+      "group": 9,
+      "title": "guided budget manual typing",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "/start"
+        },
+        {
+          "type": "callback",
+          "data": "start_search"
+        },
+        {
+          "type": "callback",
+          "data": "country:47"
+        },
+        {
+          "type": "text",
+          "text": "150000"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Какой бюджет",
+          "Какое качество отеля"
+        ]
+      },
+      "tags": [
+        "guided"
+      ]
+    },
+    {
+      "id": "g09_03",
+      "group": 9,
+      "title": "ai nights preset 7",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Привет, хочу в Турцию"
+        },
+        {
+          "type": "callback",
+          "data": "ai:nights:7"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ночи зафиксировала",
+          "Какой бюджет"
+        ]
+      },
+      "tags": [
+        "ai",
+        "buttons"
+      ]
+    },
+    {
+      "id": "g09_04",
+      "group": 9,
+      "title": "ai budget preset 100k after nights",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция"
+        },
+        {
+          "type": "text",
+          "text": "7"
+        },
+        {
+          "type": "callback",
+          "data": "ai:budget:100000"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Запускаю поиск по уточнённым параметрам",
+          "Нашла"
+        ]
+      },
+      "tags": [
+        "ai",
+        "buttons"
+      ]
+    },
+    {
+      "id": "g09_05",
+      "group": 9,
+      "title": "manual nights 15 in ai",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция"
+        },
+        {
+          "type": "text",
+          "text": "15"
+        },
+        {
+          "type": "text",
+          "text": "120000"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Нашла"
+        ]
+      },
+      "tags": [
+        "ai",
+        "manual"
+      ]
+    },
+    {
+      "id": "g09_06",
+      "group": 9,
+      "title": "guided full chain to results",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "/start"
+        },
+        {
+          "type": "callback",
+          "data": "start_search"
+        },
+        {
+          "type": "callback",
+          "data": "country:47"
+        },
+        {
+          "type": "callback",
+          "data": "budget:100000"
+        },
+        {
+          "type": "callback",
+          "data": "rating:any"
+        },
+        {
+          "type": "callback",
+          "data": "period:summer"
+        },
+        {
+          "type": "callback",
+          "data": "meal:ANY"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Нашла",
+          "💚 Хочу этот тур"
+        ]
+      },
+      "tags": [
+        "guided",
+        "full"
+      ]
+    },
+    {
+      "id": "g10_01",
+      "group": 10,
+      "title": "followup сентябрь",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        },
+        {
+          "type": "text",
+          "text": "есть в сентябре?"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Обновляю поиск"
+        ],
+        "not_contains": [
+          "Выберите страну"
+        ]
+      },
+      "tags": [
+        "followup",
+        "month",
+        "required"
+      ]
+    },
+    {
+      "id": "g10_02",
+      "group": 10,
+      "title": "followup ноябрь",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        },
+        {
+          "type": "text",
+          "text": "а в ноябре?"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Обновляю поиск"
+        ]
+      },
+      "tags": [
+        "followup",
+        "month"
+      ]
+    },
+    {
+      "id": "g10_03",
+      "group": 10,
+      "title": "followup cheaper",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        },
+        {
+          "type": "text",
+          "text": "а дешевле?"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Обновляю поиск"
+        ]
+      },
+      "tags": [
+        "followup",
+        "sort"
+      ]
+    },
+    {
+      "id": "g10_04",
+      "group": 10,
+      "title": "followup expensive",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        },
+        {
+          "type": "text",
+          "text": "а дороже?"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Обновляю поиск"
+        ]
+      },
+      "tags": [
+        "followup",
+        "sort"
+      ]
+    },
+    {
+      "id": "g10_05",
+      "group": 10,
+      "title": "followup 14 nights",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        },
+        {
+          "type": "text",
+          "text": "а на две недели?"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Обновляю поиск"
+        ]
+      },
+      "tags": [
+        "followup",
+        "nights"
+      ]
+    },
+    {
+      "id": "g10_06",
+      "group": 10,
+      "title": "followup to 250k",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        },
+        {
+          "type": "text",
+          "text": "а до 250к?"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Обновляю поиск"
+        ]
+      },
+      "tags": [
+        "followup",
+        "budget"
+      ]
+    },
+    {
+      "id": "g10_07",
+      "group": 10,
+      "title": "followup Seychelles country switch",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        },
+        {
+          "type": "text",
+          "text": "а в Сейшелы?"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Меняю направление на Сейшелы"
+        ]
+      },
+      "tags": [
+        "followup",
+        "country-switch"
+      ]
+    },
+    {
+      "id": "g10_08",
+      "group": 10,
+      "title": "followup 10 nights + Seychelles",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        },
+        {
+          "type": "text",
+          "text": "Хочу в Сейшелы на 10 ночей"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Меняю направление на Сейшелы"
+        ]
+      },
+      "tags": [
+        "followup",
+        "country-switch",
+        "required"
+      ]
+    },
+    {
+      "id": "g10_09",
+      "group": 10,
+      "title": "followup breakfasts",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        },
+        {
+          "type": "text",
+          "text": "а завтраки?"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Обновляю поиск"
+        ]
+      },
+      "tags": [
+        "followup",
+        "meal"
+      ]
+    },
+    {
+      "id": "g10_10",
+      "group": 10,
+      "title": "followup next month",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        },
+        {
+          "type": "text",
+          "text": "в следующем месяце"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Обновляю поиск"
+        ]
+      },
+      "tags": [
+        "followup",
+        "period"
+      ]
+    },
+    {
+      "id": "g11_01",
+      "group": 11,
+      "title": "show more after one-shot",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к"
+        },
+        {
+          "type": "callback_label",
+          "label": "🔁 Показать ещё"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Действия:"
+        ]
+      },
+      "tags": [
+        "buttons",
+        "pagination"
+      ]
+    },
+    {
+      "id": "g11_02",
+      "group": 11,
+      "title": "filters menu opens",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к"
+        },
+        {
+          "type": "callback",
+          "data": "filters"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Что изменить?"
+        ]
+      },
+      "tags": [
+        "buttons",
+        "filters"
+      ]
+    },
+    {
+      "id": "g11_03",
+      "group": 11,
+      "title": "filter back to results",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к"
+        },
+        {
+          "type": "callback",
+          "data": "filters"
+        },
+        {
+          "type": "callback",
+          "data": "filtermenu:back"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "💚 Хочу этот тур"
+        ]
+      },
+      "tags": [
+        "buttons",
+        "filters"
+      ]
+    },
+    {
+      "id": "g11_04",
+      "group": 11,
+      "title": "new search resets once",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к"
+        },
+        {
+          "type": "callback",
+          "data": "new"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Выберите страну для отдыха:"
+        ],
+        "no_button_text": [
+          "Другое…"
+        ]
+      },
+      "tags": [
+        "buttons",
+        "new"
+      ]
+    },
+    {
+      "id": "g11_05",
+      "group": 11,
+      "title": "change budget filter reruns",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к"
+        },
+        {
+          "type": "callback",
+          "data": "filters"
+        },
+        {
+          "type": "callback",
+          "data": "filtermenu:budget"
+        },
+        {
+          "type": "callback",
+          "data": "budget:150000"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Ищу лучшие варианты",
+          "Нашла"
+        ]
+      },
+      "tags": [
+        "buttons",
+        "filters"
+      ]
+    },
+    {
+      "id": "g12_01",
+      "group": 12,
+      "title": "double tap heart dedupe",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к"
+        },
+        {
+          "type": "callback_label",
+          "label": "💚 Хочу этот тур",
+          "index": 0
+        },
+        {
+          "type": "callback_label",
+          "label": "💚 Хочу этот тур",
+          "index": 0
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Минутку, проверяю наличие и цену…",
+          "Уже проверяю этот тур ✅"
+        ]
+      },
+      "tags": [
+        "dedupe",
+        "heart",
+        "required"
+      ]
+    },
+    {
+      "id": "g12_02",
+      "group": 12,
+      "title": "rapid refine messages no duplicate stale cards",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к всё включено"
+        },
+        {
+          "type": "text",
+          "text": "а в сентябре?"
+        },
+        {
+          "type": "text",
+          "text": "а в ноябре?"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Обновляю поиск по вашему уточнению ✨"
+        ]
+      },
+      "tags": [
+        "race",
+        "followup"
+      ]
+    },
+    {
+      "id": "g12_03",
+      "group": 12,
+      "title": "callback ack country",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "/start"
+        },
+        {
+          "type": "callback",
+          "data": "start_search"
+        },
+        {
+          "type": "callback",
+          "data": "country:47"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Какой бюджет"
+        ]
+      },
+      "tags": [
+        "callback-ack"
+      ]
+    },
+    {
+      "id": "g12_04",
+      "group": 12,
+      "title": "callback ack more",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция 7 ночей до 120к"
+        },
+        {
+          "type": "callback_label",
+          "label": "🔁 Показать ещё"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Действия:"
+        ]
+      },
+      "tags": [
+        "callback-ack",
+        "pagination"
+      ]
+    },
+    {
+      "id": "g13_01",
+      "group": 13,
+      "title": "invalid nights out of range",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "Турция"
+        },
+        {
+          "type": "text",
+          "text": "35"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Введите количество ночей числом от 1 до 30."
+        ]
+      },
+      "tags": [
+        "validation"
+      ]
+    },
+    {
+      "id": "g13_02",
+      "group": 13,
+      "title": "invalid budget negative",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "/start"
+        },
+        {
+          "type": "callback",
+          "data": "start_search"
+        },
+        {
+          "type": "callback",
+          "data": "country:47"
+        },
+        {
+          "type": "callback",
+          "data": "budget:custom"
+        },
+        {
+          "type": "text",
+          "text": "-100"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Введите сумму цифрами"
+        ]
+      },
+      "tags": [
+        "validation",
+        "guided"
+      ]
+    },
+    {
+      "id": "g14_01",
+      "group": 14,
+      "title": "country keyboard compact 2x3",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "/start"
+        },
+        {
+          "type": "callback",
+          "data": "show_countries"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "Доступные страны:"
+        ],
+        "no_button_text": [
+          "Другое…"
+        ]
+      },
+      "tags": [
+        "keyboard",
+        "countries",
+        "required"
+      ]
+    },
+    {
+      "id": "g14_02",
+      "group": 14,
+      "title": "ai nights budget keyboards compact",
+      "conversation": [
+        {
+          "type": "text",
+          "text": "хочу в Турцию"
+        }
+      ],
+      "expected": {
+        "contains": [
+          "На сколько ночей"
+        ],
+        "no_button_text": [
+          "✍️ Ввести вручную",
+          "Другое…"
+        ]
+      },
+      "tags": [
+        "keyboard",
+        "ai"
+      ]
+    }
+  ]
+}

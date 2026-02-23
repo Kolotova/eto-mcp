@@ -1,0 +1,7 @@
+
+# secrets
+Token.env.txt
+.env
+node_modules
+dist
+.DS_Store

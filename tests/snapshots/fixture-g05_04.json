@@ -1,0 +1,317 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Imperial Sands Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 3.8\n📅 26.07.2026 • 7 ночей\n🍽 3-разовое питание • 🛏 Standard\n💸 <b>90 100 ₽</b>\n🧳 Anex",
+    "<b>Imperial Sands Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 4.5\n📅 23.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Superior\n💸 <b>90 890 ₽</b>\n🧳 Fun&amp;Sun",
+    "<b>Imperial Sands Resort Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 4.5\n📅 11.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>91 800 ₽</b>\n🧳 Pegas",
+    "<b>Luna Coast Resort Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 4.4\n📅 06.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>92 300 ₽</b>\n🧳 Anex",
+    "<b>Asteria Resort Marsa Alam</b>\n📍 🇪🇬 Egypt, Marsa Alam\n⭐️ 4.3\n📅 03.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Junior Suite\n💸 <b>93 320 ₽</b>\n🧳 Biblio Globus",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Imperial Sands Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 3.8\n📅 26.07.2026 • 7 ночей\n🍽 3-разовое питание • 🛏 Standard\n💸 <b>90 100 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-e189c25a8a27:1035"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1035"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Imperial Sands Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 4.5\n📅 23.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Superior\n💸 <b>90 890 ₽</b>\n🧳 Fun&amp;Sun",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-e189c25a8a27:1072"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1072"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Imperial Sands Resort Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 4.5\n📅 11.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>91 800 ₽</b>\n🧳 Pegas",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-e189c25a8a27:1031"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1031"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Luna Coast Resort Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 4.4\n📅 06.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>92 300 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-e189c25a8a27:1002"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1002"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Asteria Resort Marsa Alam</b>\n📍 🇪🇬 Egypt, Marsa Alam\n⭐️ 4.3\n📅 03.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Junior Suite\n💸 <b>93 320 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-e189c25a8a27:1056"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1056"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-e189c25a8a27"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 54,
+    "nightsMin": 7,
+    "nightsMax": 7,
+    "budgetMax": 110000,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-e189c25a8a27",
+    "lastSearchArgs": {
+      "country_id": 54,
+      "departure_id": 1,
+      "date_from": "2026-07-01",
+      "date_to": "2026-07-31",
+      "nights_min": 7,
+      "nights_max": 7,
+      "adults": 2,
+      "children": 0,
+      "country_name": "Egypt",
+      "budget_min": 90000,
+      "budget_max": 110000,
+      "meal": 0,
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 54,
+      "countryName": "Египет",
+      "dateFrom": "2026-07-01",
+      "dateTo": "2026-07-31",
+      "nightsMin": 7,
+      "nightsMax": 7,
+      "budgetMax": 110000,
+      "budgetMin": 90000,
+      "meal": "ANY",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 54,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Egypt",
+        "budget_min": 90000,
+        "budget_max": 110000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 90100,
+          "currency": "RUB",
+          "date_from": "2026-07-26",
+          "nights": 7,
+          "operator": "Anex",
+          "hotel_id": 1035,
+          "hotel_name": "Imperial Sands Hurghada",
+          "stars": 4,
+          "rating": 3.8,
+          "meal": "FB",
+          "room": "Standard",
+          "country_name": "Egypt",
+          "city_name": "Hurghada",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_06.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "aa35d361a03329a47ef0b6b2068c527bcca29bc492a931134670e5b36c8a02c8"
+          }
+        },
+        {
+          "price": 90890,
+          "currency": "RUB",
+          "date_from": "2026-07-23",
+          "nights": 7,
+          "operator": "Fun&Sun",
+          "hotel_id": 1072,
+          "hotel_name": "Imperial Sands Hurghada",
+          "stars": 4,
+          "rating": 4.5,
+          "meal": "BB",
+          "room": "Superior",
+          "country_name": "Egypt",
+          "city_name": "Hurghada",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_04.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "aa35d361a03329a47ef0b6b2068c527bcca29bc492a931134670e5b36c8a02c8"
+          }
+        },
+        {
+          "price": 91800,
+          "currency": "RUB",
+          "date_from": "2026-07-11",
+          "nights": 7,
+          "operator": "Pegas",
+          "hotel_id": 1031,
+          "hotel_name": "Imperial Sands Resort Sharm El Sheikh",
+          "stars": 4,
+          "rating": 4.5,
+          "meal": "AI",
+          "room": "Deluxe",
+          "country_name": "Egypt",
+          "city_name": "Sharm El Sheikh",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_05.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "aa35d361a03329a47ef0b6b2068c527bcca29bc492a931134670e5b36c8a02c8"
+          }
+        },
+        {
+          "price": 92300,
+          "currency": "RUB",
+          "date_from": "2026-07-06",
+          "nights": 7,
+          "operator": "Anex",
+          "hotel_id": 1002,
+          "hotel_name": "Luna Coast Resort Hurghada",
+          "stars": 4,
+          "rating": 4.4,
+          "meal": "HB",
+          "room": "Standard",
+          "country_name": "Egypt",
+          "city_name": "Hurghada",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_01.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "aa35d361a03329a47ef0b6b2068c527bcca29bc492a931134670e5b36c8a02c8"
+          }
+        },
+        {
+          "price": 93320,
+          "currency": "RUB",
+          "date_from": "2026-07-03",
+          "nights": 7,
+          "operator": "Biblio Globus",
+          "hotel_id": 1056,
+          "hotel_name": "Asteria Resort Marsa Alam",
+          "stars": 4,
+          "rating": 4.3,
+          "meal": "BB",
+          "room": "Junior Suite",
+          "country_name": "Egypt",
+          "city_name": "Marsa Alam",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_07.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "aa35d361a03329a47ef0b6b2068c527bcca29bc492a931134670e5b36c8a02c8"
+          }
+        }
+      ],
+      "lastRequestId": "mock-e189c25a8a27"
+    }
+  }
+}

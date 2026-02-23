@@ -1,0 +1,314 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Coral Elite Baa Atoll</b>\n📍 🇲🇻 Maldives, Baa Atoll\n⭐️ 3.0\n📅 04.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Standard\n💸 <b>87 400 ₽</b>\n🧳 Pegas",
+    "<b>Vista Mare Resort North Malé Atoll</b>\n📍 🇲🇻 Maldives, North Malé Atoll\n⭐️ 3.5\n📅 05.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Suite\n💸 <b>90 400 ₽</b>\n🧳 Pegas",
+    "<b>Crystal Bay Resort Baa Atoll</b>\n📍 🇲🇻 Maldives, Baa Atoll\n⭐️ 4.1\n📅 03.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Junior Suite\n💸 <b>90 600 ₽</b>\n🧳 Biblio Globus",
+    "<b>Imperial Sands Resort South Malé Atoll</b>\n📍 🇲🇻 Maldives, South Malé Atoll\n⭐️ 3.2\n📅 04.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Deluxe\n💸 <b>91 200 ₽</b>\n🧳 Anex",
+    "<b>Asteria Ari Atoll</b>\n📍 🇲🇻 Maldives, Ari Atoll\n⭐️ 4.0\n📅 14.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>93 300 ₽</b>\n🧳 Biblio Globus",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Coral Elite Baa Atoll</b>\n📍 🇲🇻 Maldives, Baa Atoll\n⭐️ 3.0\n📅 04.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Standard\n💸 <b>87 400 ₽</b>\n🧳 Pegas",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-52aba2576c77:1006"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1006"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Vista Mare Resort North Malé Atoll</b>\n📍 🇲🇻 Maldives, North Malé Atoll\n⭐️ 3.5\n📅 05.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Suite\n💸 <b>90 400 ₽</b>\n🧳 Pegas",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-52aba2576c77:1013"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1013"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Crystal Bay Resort Baa Atoll</b>\n📍 🇲🇻 Maldives, Baa Atoll\n⭐️ 4.1\n📅 03.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Junior Suite\n💸 <b>90 600 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-52aba2576c77:1042"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1042"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Imperial Sands Resort South Malé Atoll</b>\n📍 🇲🇻 Maldives, South Malé Atoll\n⭐️ 3.2\n📅 04.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Deluxe\n💸 <b>91 200 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-52aba2576c77:1050"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1050"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Asteria Ari Atoll</b>\n📍 🇲🇻 Maldives, Ari Atoll\n⭐️ 4.0\n📅 14.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>93 300 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-52aba2576c77:1048"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1048"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-52aba2576c77"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 90,
+    "nightsMin": 7,
+    "nightsMax": 7,
+    "budgetMax": 100000,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-52aba2576c77",
+    "lastSearchArgs": {
+      "country_id": 90,
+      "departure_id": 1,
+      "date_from": "2026-07-01",
+      "date_to": "2026-07-31",
+      "nights_min": 7,
+      "nights_max": 7,
+      "adults": 2,
+      "children": 0,
+      "country_name": "Maldives",
+      "budget_max": 100000,
+      "meal": 0,
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 90,
+      "countryName": "Мальдивы",
+      "dateFrom": "2026-07-01",
+      "dateTo": "2026-07-31",
+      "nightsMin": 7,
+      "nightsMax": 7,
+      "budgetMax": 100000,
+      "meal": "ANY",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 90,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Maldives",
+        "budget_max": 100000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 87400,
+          "currency": "RUB",
+          "date_from": "2026-07-04",
+          "nights": 7,
+          "operator": "Pegas",
+          "hotel_id": 1006,
+          "hotel_name": "Coral Elite Baa Atoll",
+          "stars": 3,
+          "rating": 3,
+          "meal": "BB",
+          "room": "Standard",
+          "country_name": "Maldives",
+          "city_name": "Baa Atoll",
+          "flag_emoji": "🇲🇻",
+          "image_url": "/assets/hotels/maldives/maldives_07.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "0acf2a2d7901625145ed8a008cbf2e0595b491591030a9d64967e25331702122"
+          }
+        },
+        {
+          "price": 90400,
+          "currency": "RUB",
+          "date_from": "2026-07-05",
+          "nights": 7,
+          "operator": "Pegas",
+          "hotel_id": 1013,
+          "hotel_name": "Vista Mare Resort North Malé Atoll",
+          "stars": 3,
+          "rating": 3.5,
+          "meal": "HB",
+          "room": "Suite",
+          "country_name": "Maldives",
+          "city_name": "North Malé Atoll",
+          "flag_emoji": "🇲🇻",
+          "image_url": "/assets/hotels/maldives/maldives_08.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "0acf2a2d7901625145ed8a008cbf2e0595b491591030a9d64967e25331702122"
+          }
+        },
+        {
+          "price": 90600,
+          "currency": "RUB",
+          "date_from": "2026-07-03",
+          "nights": 7,
+          "operator": "Biblio Globus",
+          "hotel_id": 1042,
+          "hotel_name": "Crystal Bay Resort Baa Atoll",
+          "stars": 3,
+          "rating": 4.1,
+          "meal": "BB",
+          "room": "Junior Suite",
+          "country_name": "Maldives",
+          "city_name": "Baa Atoll",
+          "flag_emoji": "🇲🇻",
+          "image_url": "/assets/hotels/maldives/maldives_01.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "0acf2a2d7901625145ed8a008cbf2e0595b491591030a9d64967e25331702122"
+          }
+        },
+        {
+          "price": 91200,
+          "currency": "RUB",
+          "date_from": "2026-07-04",
+          "nights": 7,
+          "operator": "Anex",
+          "hotel_id": 1050,
+          "hotel_name": "Imperial Sands Resort South Malé Atoll",
+          "stars": 3,
+          "rating": 3.2,
+          "meal": "HB",
+          "room": "Deluxe",
+          "country_name": "Maldives",
+          "city_name": "South Malé Atoll",
+          "flag_emoji": "🇲🇻",
+          "image_url": "/assets/hotels/maldives/maldives_04.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "0acf2a2d7901625145ed8a008cbf2e0595b491591030a9d64967e25331702122"
+          }
+        },
+        {
+          "price": 93300,
+          "currency": "RUB",
+          "date_from": "2026-07-14",
+          "nights": 7,
+          "operator": "Biblio Globus",
+          "hotel_id": 1048,
+          "hotel_name": "Asteria Ari Atoll",
+          "stars": 3,
+          "rating": 4,
+          "meal": "HB",
+          "room": "Junior Suite",
+          "country_name": "Maldives",
+          "city_name": "Ari Atoll",
+          "flag_emoji": "🇲🇻",
+          "image_url": "/assets/hotels/maldives/maldives_03.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "0acf2a2d7901625145ed8a008cbf2e0595b491591030a9d64967e25331702122"
+          }
+        }
+      ],
+      "lastRequestId": "mock-52aba2576c77"
+    }
+  }
+}

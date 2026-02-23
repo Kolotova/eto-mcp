@@ -1,0 +1,455 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Crystal Bay Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>60 300 ₽</b>\n🧳 Pegas",
+    "<b>Vista Mare Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 18.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 000 ₽</b>\n🧳 Coral",
+    "<b>Sunwave Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.0\n📅 25.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>70 600 ₽</b>\n🧳 Anex",
+    "<b>Imperial Sands Resort Side</b>\n📍 🇹🇷 Turkey, Side\n📅 10.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>70 800 ₽</b>\n🧳 Anex",
+    "<b>Crystal Bay Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 01.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 100 ₽</b>\n🧳 Tez Tour",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:",
+    "Меняю направление на Сейшелы и обновляю поиск ✨",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Grand Azure Resort La Digue</b>\n📍 🇸🇨 Seychelles, La Digue\n⭐️ 3.6\n📅 03.10.2026 • 10 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>99 900 ₽</b>\n🧳 Fun&amp;Sun",
+    "<b>Coral Elite Praslin</b>\n📍 🇸🇨 Seychelles, Praslin\n⭐️ 3.1\n📅 24.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>102 020 ₽</b>\n🧳 Biblio Globus",
+    "<b>Royal Palm La Digue</b>\n📍 🇸🇨 Seychelles, La Digue\n⭐️ 3.4\n📅 10.10.2026 • 10 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>102 800 ₽</b>\n🧳 TUI",
+    "<b>Vista Mare Resort La Digue</b>\n📍 🇸🇨 Seychelles, La Digue\n⭐️ 3.5\n📅 04.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Deluxe\n💸 <b>105 100 ₽</b>\n🧳 Biblio Globus",
+    "<b>Blue Horizon Praslin</b>\n📍 🇸🇨 Seychelles, Praslin\n⭐️ 3.4\n📅 17.10.2026 • 10 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>106 000 ₽</b>\n🧳 Tez Tour",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Crystal Bay Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>60 300 ₽</b>\n🧳 Pegas",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-adca21747853:1011"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1011"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Vista Mare Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 18.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 000 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-adca21747853:1050"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1050"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Sunwave Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.0\n📅 25.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>70 600 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-adca21747853:1057"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1057"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Imperial Sands Resort Side</b>\n📍 🇹🇷 Turkey, Side\n📅 10.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>70 800 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-adca21747853:1001"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1001"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Crystal Bay Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 01.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 100 ₽</b>\n🧳 Tez Tour",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-adca21747853:1006"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1006"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-adca21747853"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Меняю направление на Сейшелы и обновляю поиск ✨"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Grand Azure Resort La Digue</b>\n📍 🇸🇨 Seychelles, La Digue\n⭐️ 3.6\n📅 03.10.2026 • 10 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>99 900 ₽</b>\n🧳 Fun&amp;Sun",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-1c5940b9de53:1006"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1006"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Coral Elite Praslin</b>\n📍 🇸🇨 Seychelles, Praslin\n⭐️ 3.1\n📅 24.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>102 020 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-1c5940b9de53:1033"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1033"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Royal Palm La Digue</b>\n📍 🇸🇨 Seychelles, La Digue\n⭐️ 3.4\n📅 10.10.2026 • 10 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>102 800 ₽</b>\n🧳 TUI",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-1c5940b9de53:1095"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1095"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Vista Mare Resort La Digue</b>\n📍 🇸🇨 Seychelles, La Digue\n⭐️ 3.5\n📅 04.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Deluxe\n💸 <b>105 100 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-1c5940b9de53:1061"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1061"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Blue Horizon Praslin</b>\n📍 🇸🇨 Seychelles, Praslin\n⭐️ 3.4\n📅 17.10.2026 • 10 ночей\n🍽 Без питания • 🛏 Standard\n💸 <b>106 000 ₽</b>\n🧳 Tez Tour",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-1c5940b9de53:1014"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1014"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-1c5940b9de53"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 91,
+    "nightsMin": 10,
+    "nightsMax": 10,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-1c5940b9de53",
+    "lastSearchArgs": {
+      "country_id": 91,
+      "departure_id": 1,
+      "date_from": "2026-10-01",
+      "date_to": "2026-10-31",
+      "nights_min": 10,
+      "nights_max": 10,
+      "adults": 2,
+      "children": 0,
+      "country_name": "Seychelles",
+      "budget_min": 0,
+      "budget_max": 0,
+      "meal": 0,
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 91,
+      "countryName": "Сейшелы",
+      "dateFrom": "2026-10-01",
+      "dateTo": "2026-10-31",
+      "nightsMin": 10,
+      "nightsMax": 10,
+      "budgetMax": 0,
+      "budgetMin": 0,
+      "meal": "ANY",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 91,
+        "departure_id": 1,
+        "date_from": "2026-10-01",
+        "date_to": "2026-10-31",
+        "nights_min": 10,
+        "nights_max": 10,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Seychelles",
+        "budget_min": 0,
+        "budget_max": 0,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 99900,
+          "currency": "RUB",
+          "date_from": "2026-10-03",
+          "nights": 10,
+          "operator": "Fun&Sun",
+          "hotel_id": 1006,
+          "hotel_name": "Grand Azure Resort La Digue",
+          "stars": 3,
+          "rating": 3.6,
+          "meal": "RO",
+          "room": "Junior Suite",
+          "country_name": "Seychelles",
+          "city_name": "La Digue",
+          "flag_emoji": "🇸🇨",
+          "image_url": "/assets/hotels/seychelles/seychelles_06.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "b3a4d1becc8e6af233d715ddf9ad9233e4b59b75760101c8485c8b4e38cd7e12"
+          }
+        },
+        {
+          "price": 102020,
+          "currency": "RUB",
+          "date_from": "2026-10-24",
+          "nights": 10,
+          "operator": "Biblio Globus",
+          "hotel_id": 1033,
+          "hotel_name": "Coral Elite Praslin",
+          "stars": 3,
+          "rating": 3.1,
+          "meal": "HB",
+          "room": "Junior Suite",
+          "country_name": "Seychelles",
+          "city_name": "Praslin",
+          "flag_emoji": "🇸🇨",
+          "image_url": "/assets/hotels/seychelles/seychelles_02.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "b3a4d1becc8e6af233d715ddf9ad9233e4b59b75760101c8485c8b4e38cd7e12"
+          }
+        },
+        {
+          "price": 102800,
+          "currency": "RUB",
+          "date_from": "2026-10-10",
+          "nights": 10,
+          "operator": "TUI",
+          "hotel_id": 1095,
+          "hotel_name": "Royal Palm La Digue",
+          "stars": 3,
+          "rating": 3.4,
+          "meal": "RO",
+          "room": "Junior Suite",
+          "country_name": "Seychelles",
+          "city_name": "La Digue",
+          "flag_emoji": "🇸🇨",
+          "image_url": "/assets/hotels/seychelles/seychelles_01.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "b3a4d1becc8e6af233d715ddf9ad9233e4b59b75760101c8485c8b4e38cd7e12"
+          }
+        },
+        {
+          "price": 105100,
+          "currency": "RUB",
+          "date_from": "2026-10-04",
+          "nights": 10,
+          "operator": "Biblio Globus",
+          "hotel_id": 1061,
+          "hotel_name": "Vista Mare Resort La Digue",
+          "stars": 3,
+          "rating": 3.5,
+          "meal": "BB",
+          "room": "Deluxe",
+          "country_name": "Seychelles",
+          "city_name": "La Digue",
+          "flag_emoji": "🇸🇨",
+          "image_url": "/assets/hotels/seychelles/seychelles_03.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "b3a4d1becc8e6af233d715ddf9ad9233e4b59b75760101c8485c8b4e38cd7e12"
+          }
+        },
+        {
+          "price": 106000,
+          "currency": "RUB",
+          "date_from": "2026-10-17",
+          "nights": 10,
+          "operator": "Tez Tour",
+          "hotel_id": 1014,
+          "hotel_name": "Blue Horizon Praslin",
+          "stars": 3,
+          "rating": 3.4,
+          "meal": "RO",
+          "room": "Standard",
+          "country_name": "Seychelles",
+          "city_name": "Praslin",
+          "flag_emoji": "🇸🇨",
+          "image_url": "/assets/hotels/seychelles/seychelles_04.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "b3a4d1becc8e6af233d715ddf9ad9233e4b59b75760101c8485c8b4e38cd7e12"
+          }
+        }
+      ],
+      "lastRequestId": "mock-1c5940b9de53"
+    }
+  }
+}

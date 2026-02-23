@@ -1,0 +1,313 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Marina Crown Resort Mahé</b>\n📍 🇸🇨 Seychelles, Mahé\n⭐️ 3.1\n📅 02.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>101 180 ₽</b>\n🧳 Pegas",
+    "<b>Blue Horizon Resort Praslin</b>\n📍 🇸🇨 Seychelles, Praslin\n⭐️ 4.1\n📅 12.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Deluxe\n💸 <b>104 200 ₽</b>\n🧳 Anex",
+    "<b>Marina Crown Resort Praslin</b>\n📍 🇸🇨 Seychelles, Praslin\n⭐️ 3.2\n📅 03.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Junior Suite\n💸 <b>106 700 ₽</b>\n🧳 Tez Tour",
+    "<b>Marina Crown La Digue</b>\n📍 🇸🇨 Seychelles, La Digue\n📅 24.10.2026 • 10 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>107 500 ₽</b>\n🧳 Anex",
+    "<b>Vista Mare Resort Praslin</b>\n📍 🇸🇨 Seychelles, Praslin\n⭐️ 3.3\n📅 21.10.2026 • 10 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>107 800 ₽</b>\n🧳 Tez Tour",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Marina Crown Resort Mahé</b>\n📍 🇸🇨 Seychelles, Mahé\n⭐️ 3.1\n📅 02.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>101 180 ₽</b>\n🧳 Pegas",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-b1b5d5ba39d0:1079"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1079"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Blue Horizon Resort Praslin</b>\n📍 🇸🇨 Seychelles, Praslin\n⭐️ 4.1\n📅 12.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Deluxe\n💸 <b>104 200 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-b1b5d5ba39d0:1002"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1002"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Marina Crown Resort Praslin</b>\n📍 🇸🇨 Seychelles, Praslin\n⭐️ 3.2\n📅 03.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Junior Suite\n💸 <b>106 700 ₽</b>\n🧳 Tez Tour",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-b1b5d5ba39d0:1034"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1034"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Marina Crown La Digue</b>\n📍 🇸🇨 Seychelles, La Digue\n📅 24.10.2026 • 10 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>107 500 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-b1b5d5ba39d0:1053"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1053"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Vista Mare Resort Praslin</b>\n📍 🇸🇨 Seychelles, Praslin\n⭐️ 3.3\n📅 21.10.2026 • 10 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>107 800 ₽</b>\n🧳 Tez Tour",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-b1b5d5ba39d0:1000"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1000"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-b1b5d5ba39d0"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 91,
+    "nightsMin": 10,
+    "nightsMax": 10,
+    "budgetMax": 250000,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-b1b5d5ba39d0",
+    "lastSearchArgs": {
+      "country_id": 91,
+      "departure_id": 1,
+      "date_from": "2026-10-01",
+      "date_to": "2026-10-31",
+      "nights_min": 10,
+      "nights_max": 10,
+      "adults": 2,
+      "children": 0,
+      "country_name": "Seychelles",
+      "budget_max": 250000,
+      "meal": 0,
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 91,
+      "countryName": "Сейшелы",
+      "dateFrom": "2026-10-01",
+      "dateTo": "2026-10-31",
+      "nightsMin": 10,
+      "nightsMax": 10,
+      "budgetMax": 250000,
+      "meal": "ANY",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 91,
+        "departure_id": 1,
+        "date_from": "2026-10-01",
+        "date_to": "2026-10-31",
+        "nights_min": 10,
+        "nights_max": 10,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Seychelles",
+        "budget_max": 250000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 101180,
+          "currency": "RUB",
+          "date_from": "2026-10-02",
+          "nights": 10,
+          "operator": "Pegas",
+          "hotel_id": 1079,
+          "hotel_name": "Marina Crown Resort Mahé",
+          "stars": 3,
+          "rating": 3.1,
+          "meal": "BB",
+          "room": "Family Room",
+          "country_name": "Seychelles",
+          "city_name": "Mahé",
+          "flag_emoji": "🇸🇨",
+          "image_url": "/assets/hotels/seychelles/seychelles_04.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "ea4a3224319ded546b55771c17ff7d03000be3f7c92cffc310e704c8210f7f6b"
+          }
+        },
+        {
+          "price": 104200,
+          "currency": "RUB",
+          "date_from": "2026-10-12",
+          "nights": 10,
+          "operator": "Anex",
+          "hotel_id": 1002,
+          "hotel_name": "Blue Horizon Resort Praslin",
+          "stars": 3,
+          "rating": 4.1,
+          "meal": "HB",
+          "room": "Deluxe",
+          "country_name": "Seychelles",
+          "city_name": "Praslin",
+          "flag_emoji": "🇸🇨",
+          "image_url": "/assets/hotels/seychelles/seychelles_03.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "ea4a3224319ded546b55771c17ff7d03000be3f7c92cffc310e704c8210f7f6b"
+          }
+        },
+        {
+          "price": 106700,
+          "currency": "RUB",
+          "date_from": "2026-10-03",
+          "nights": 10,
+          "operator": "Tez Tour",
+          "hotel_id": 1034,
+          "hotel_name": "Marina Crown Resort Praslin",
+          "stars": 3,
+          "rating": 3.2,
+          "meal": "BB",
+          "room": "Junior Suite",
+          "country_name": "Seychelles",
+          "city_name": "Praslin",
+          "flag_emoji": "🇸🇨",
+          "image_url": "/assets/hotels/seychelles/seychelles_07.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "ea4a3224319ded546b55771c17ff7d03000be3f7c92cffc310e704c8210f7f6b"
+          }
+        },
+        {
+          "price": 107500,
+          "currency": "RUB",
+          "date_from": "2026-10-24",
+          "nights": 10,
+          "operator": "Anex",
+          "hotel_id": 1053,
+          "hotel_name": "Marina Crown La Digue",
+          "stars": 3,
+          "meal": "RO",
+          "room": "Junior Suite",
+          "country_name": "Seychelles",
+          "city_name": "La Digue",
+          "flag_emoji": "🇸🇨",
+          "image_url": "/assets/hotels/seychelles/seychelles_01.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "ea4a3224319ded546b55771c17ff7d03000be3f7c92cffc310e704c8210f7f6b"
+          }
+        },
+        {
+          "price": 107800,
+          "currency": "RUB",
+          "date_from": "2026-10-21",
+          "nights": 10,
+          "operator": "Tez Tour",
+          "hotel_id": 1000,
+          "hotel_name": "Vista Mare Resort Praslin",
+          "stars": 3,
+          "rating": 3.3,
+          "meal": "RO",
+          "room": "Junior Suite",
+          "country_name": "Seychelles",
+          "city_name": "Praslin",
+          "flag_emoji": "🇸🇨",
+          "image_url": "/assets/hotels/seychelles/seychelles_08.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "ea4a3224319ded546b55771c17ff7d03000be3f7c92cffc310e704c8210f7f6b"
+          }
+        }
+      ],
+      "lastRequestId": "mock-b1b5d5ba39d0"
+    }
+  }
+}

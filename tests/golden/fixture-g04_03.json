@@ -1,0 +1,314 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Royal Palm Resort Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 4.0\n📅 31.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>72 100 ₽</b>\n🧳 Biblio Globus",
+    "<b>Sea Breeze Resort Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 3.7\n📅 24.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Standard\n💸 <b>73 000 ₽</b>\n🧳 Anex",
+    "<b>Imperial Sands Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 3.9\n📅 31.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>74 500 ₽</b>\n🧳 Anex",
+    "<b>Sea Breeze Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 3.8\n📅 07.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Family Room\n💸 <b>76 800 ₽</b>\n🧳 Biblio Globus",
+    "<b>Coral Elite Marsa Alam</b>\n📍 🇪🇬 Egypt, Marsa Alam\n⭐️ 3.6\n📅 19.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>77 000 ₽</b>\n🧳 Fun&amp;Sun",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Royal Palm Resort Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 4.0\n📅 31.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>72 100 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-b3e51a3b25db:1023"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1023"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Sea Breeze Resort Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 3.7\n📅 24.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Standard\n💸 <b>73 000 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-b3e51a3b25db:1066"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1066"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Imperial Sands Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 3.9\n📅 31.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>74 500 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-b3e51a3b25db:1064"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1064"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Sea Breeze Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 3.8\n📅 07.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Family Room\n💸 <b>76 800 ₽</b>\n🧳 Biblio Globus",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-b3e51a3b25db:1029"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1029"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Coral Elite Marsa Alam</b>\n📍 🇪🇬 Egypt, Marsa Alam\n⭐️ 3.6\n📅 19.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>77 000 ₽</b>\n🧳 Fun&amp;Sun",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-b3e51a3b25db:1011"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1011"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-b3e51a3b25db"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 54,
+    "nightsMin": 10,
+    "nightsMax": 10,
+    "budgetMax": 100000,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-b3e51a3b25db",
+    "lastSearchArgs": {
+      "country_id": 54,
+      "departure_id": 1,
+      "date_from": "2026-10-01",
+      "date_to": "2026-10-31",
+      "nights_min": 10,
+      "nights_max": 10,
+      "adults": 2,
+      "children": 0,
+      "country_name": "Egypt",
+      "budget_max": 100000,
+      "meal": 0,
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 54,
+      "countryName": "Египет",
+      "dateFrom": "2026-10-01",
+      "dateTo": "2026-10-31",
+      "nightsMin": 10,
+      "nightsMax": 10,
+      "budgetMax": 100000,
+      "meal": "ANY",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 54,
+        "departure_id": 1,
+        "date_from": "2026-10-01",
+        "date_to": "2026-10-31",
+        "nights_min": 10,
+        "nights_max": 10,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Egypt",
+        "budget_max": 100000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 72100,
+          "currency": "RUB",
+          "date_from": "2026-10-31",
+          "nights": 10,
+          "operator": "Biblio Globus",
+          "hotel_id": 1023,
+          "hotel_name": "Royal Palm Resort Hurghada",
+          "stars": 3,
+          "rating": 4,
+          "meal": "HB",
+          "room": "Junior Suite",
+          "country_name": "Egypt",
+          "city_name": "Hurghada",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_05.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "2a8cd22c7d1a9026a0b598395d66f93487ff0ee44925c3369349d4d251029fe3"
+          }
+        },
+        {
+          "price": 73000,
+          "currency": "RUB",
+          "date_from": "2026-10-24",
+          "nights": 10,
+          "operator": "Anex",
+          "hotel_id": 1066,
+          "hotel_name": "Sea Breeze Resort Hurghada",
+          "stars": 3,
+          "rating": 3.7,
+          "meal": "BB",
+          "room": "Standard",
+          "country_name": "Egypt",
+          "city_name": "Hurghada",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_04.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "2a8cd22c7d1a9026a0b598395d66f93487ff0ee44925c3369349d4d251029fe3"
+          }
+        },
+        {
+          "price": 74500,
+          "currency": "RUB",
+          "date_from": "2026-10-31",
+          "nights": 10,
+          "operator": "Anex",
+          "hotel_id": 1064,
+          "hotel_name": "Imperial Sands Hurghada",
+          "stars": 3,
+          "rating": 3.9,
+          "meal": "BB",
+          "room": "Suite",
+          "country_name": "Egypt",
+          "city_name": "Hurghada",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_06.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "2a8cd22c7d1a9026a0b598395d66f93487ff0ee44925c3369349d4d251029fe3"
+          }
+        },
+        {
+          "price": 76800,
+          "currency": "RUB",
+          "date_from": "2026-10-07",
+          "nights": 10,
+          "operator": "Biblio Globus",
+          "hotel_id": 1029,
+          "hotel_name": "Sea Breeze Sharm El Sheikh",
+          "stars": 3,
+          "rating": 3.8,
+          "meal": "HB",
+          "room": "Family Room",
+          "country_name": "Egypt",
+          "city_name": "Sharm El Sheikh",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_07.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "2a8cd22c7d1a9026a0b598395d66f93487ff0ee44925c3369349d4d251029fe3"
+          }
+        },
+        {
+          "price": 77000,
+          "currency": "RUB",
+          "date_from": "2026-10-19",
+          "nights": 10,
+          "operator": "Fun&Sun",
+          "hotel_id": 1011,
+          "hotel_name": "Coral Elite Marsa Alam",
+          "stars": 3,
+          "rating": 3.6,
+          "meal": "BB",
+          "room": "Family Room",
+          "country_name": "Egypt",
+          "city_name": "Marsa Alam",
+          "flag_emoji": "🇪🇬",
+          "image_url": "/assets/hotels/egypt/egypt_08.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "2a8cd22c7d1a9026a0b598395d66f93487ff0ee44925c3369349d4d251029fe3"
+          }
+        }
+      ],
+      "lastRequestId": "mock-b3e51a3b25db"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "messages": [
+    "Поняла: Таиланд. Напишите «отмена», если хотите прервать.",
+    "Супер. На сколько ночей планируете? Напишите число (например 7) или выберите вариант ниже."
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "Поняла: Таиланд. Напишите «отмена», если хотите прервать."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Супер. На сколько ночей планируете? Напишите число (например 7) или выберите вариант ниже.",
+      "keyboard": [
+        [
+          {
+            "text": "7",
+            "callback_data": "ai:nights:7"
+          },
+          {
+            "text": "10",
+            "callback_data": "ai:nights:10"
+          },
+          {
+            "text": "14",
+            "callback_data": "ai:nights:14"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "nightsMin": 6,
+    "nightsMax": 10,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "aiMode": true,
+    "aiAwaiting": "nights"
+  }
+}

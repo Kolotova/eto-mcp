@@ -1,0 +1,314 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Blue Horizon Resort Dubai</b>\n📍 🇦🇪 UAE, Dubai\n⭐️ 3.8\n📅 03.03.2026 • 3 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>62 700 ₽</b>\n🧳 Fun&amp;Sun",
+    "<b>Royal Palm Resort Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 4.0\n📅 02.03.2026 • 3 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>65 760 ₽</b>\n🧳 Coral",
+    "<b>Royal Palm Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 3.8\n📅 15.03.2026 • 3 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>67 100 ₽</b>\n🧳 TUI",
+    "<b>Crystal Bay Dubai</b>\n📍 🇦🇪 UAE, Dubai\n⭐️ 3.1\n📅 08.03.2026 • 3 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>68 510 ₽</b>\n🧳 Coral",
+    "<b>Crystal Bay Resort Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 3.5\n📅 06.03.2026 • 3 ночей\n🍽 Завтраки • 🛏 Deluxe\n💸 <b>70 800 ₽</b>\n🧳 Tez Tour",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Blue Horizon Resort Dubai</b>\n📍 🇦🇪 UAE, Dubai\n⭐️ 3.8\n📅 03.03.2026 • 3 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>62 700 ₽</b>\n🧳 Fun&amp;Sun",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-ef35840fda75:1061"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1061"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Royal Palm Resort Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 4.0\n📅 02.03.2026 • 3 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>65 760 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-ef35840fda75:1062"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1062"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Royal Palm Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 3.8\n📅 15.03.2026 • 3 ночей\n🍽 Без питания • 🛏 Junior Suite\n💸 <b>67 100 ₽</b>\n🧳 TUI",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-ef35840fda75:1033"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1033"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Crystal Bay Dubai</b>\n📍 🇦🇪 UAE, Dubai\n⭐️ 3.1\n📅 08.03.2026 • 3 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>68 510 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-ef35840fda75:1043"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1043"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Crystal Bay Resort Ras Al Khaimah</b>\n📍 🇦🇪 UAE, Ras Al Khaimah\n⭐️ 3.5\n📅 06.03.2026 • 3 ночей\n🍽 Завтраки • 🛏 Deluxe\n💸 <b>70 800 ₽</b>\n🧳 Tez Tour",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-ef35840fda75:1038"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1038"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-ef35840fda75"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 63,
+    "nightsMin": 3,
+    "nightsMax": 3,
+    "budgetMax": 100000,
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-ef35840fda75",
+    "lastSearchArgs": {
+      "country_id": 63,
+      "departure_id": 1,
+      "date_from": "2026-03-01",
+      "date_to": "2026-03-31",
+      "nights_min": 3,
+      "nights_max": 3,
+      "adults": 2,
+      "children": 0,
+      "country_name": "UAE",
+      "budget_max": 100000,
+      "meal": 0,
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 63,
+      "countryName": "ОАЭ",
+      "dateFrom": "2026-03-01",
+      "dateTo": "2026-03-31",
+      "nightsMin": 3,
+      "nightsMax": 3,
+      "budgetMax": 100000,
+      "meal": "ANY",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 63,
+        "departure_id": 1,
+        "date_from": "2026-03-01",
+        "date_to": "2026-03-31",
+        "nights_min": 3,
+        "nights_max": 3,
+        "adults": 2,
+        "children": 0,
+        "country_name": "UAE",
+        "budget_max": 100000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 62700,
+          "currency": "RUB",
+          "date_from": "2026-03-03",
+          "nights": 3,
+          "operator": "Fun&Sun",
+          "hotel_id": 1061,
+          "hotel_name": "Blue Horizon Resort Dubai",
+          "stars": 3,
+          "rating": 3.8,
+          "meal": "RO",
+          "room": "Suite",
+          "country_name": "UAE",
+          "city_name": "Dubai",
+          "flag_emoji": "🇦🇪",
+          "image_url": "/assets/hotels/uae/uae_08.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "fcf2fb0e925f689723c13e8c8d0c5e1269f36f98c5a7f0cd4af19f0ccffc7713"
+          }
+        },
+        {
+          "price": 65760,
+          "currency": "RUB",
+          "date_from": "2026-03-02",
+          "nights": 3,
+          "operator": "Coral",
+          "hotel_id": 1062,
+          "hotel_name": "Royal Palm Resort Ras Al Khaimah",
+          "stars": 3,
+          "rating": 4,
+          "meal": "RO",
+          "room": "Junior Suite",
+          "country_name": "UAE",
+          "city_name": "Ras Al Khaimah",
+          "flag_emoji": "🇦🇪",
+          "image_url": "/assets/hotels/uae/uae_04.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "fcf2fb0e925f689723c13e8c8d0c5e1269f36f98c5a7f0cd4af19f0ccffc7713"
+          }
+        },
+        {
+          "price": 67100,
+          "currency": "RUB",
+          "date_from": "2026-03-15",
+          "nights": 3,
+          "operator": "TUI",
+          "hotel_id": 1033,
+          "hotel_name": "Royal Palm Ras Al Khaimah",
+          "stars": 3,
+          "rating": 3.8,
+          "meal": "RO",
+          "room": "Junior Suite",
+          "country_name": "UAE",
+          "city_name": "Ras Al Khaimah",
+          "flag_emoji": "🇦🇪",
+          "image_url": "/assets/hotels/uae/uae_01.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "fcf2fb0e925f689723c13e8c8d0c5e1269f36f98c5a7f0cd4af19f0ccffc7713"
+          }
+        },
+        {
+          "price": 68510,
+          "currency": "RUB",
+          "date_from": "2026-03-08",
+          "nights": 3,
+          "operator": "Coral",
+          "hotel_id": 1043,
+          "hotel_name": "Crystal Bay Dubai",
+          "stars": 3,
+          "rating": 3.1,
+          "meal": "HB",
+          "room": "Junior Suite",
+          "country_name": "UAE",
+          "city_name": "Dubai",
+          "flag_emoji": "🇦🇪",
+          "image_url": "/assets/hotels/uae/uae_02.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "fcf2fb0e925f689723c13e8c8d0c5e1269f36f98c5a7f0cd4af19f0ccffc7713"
+          }
+        },
+        {
+          "price": 70800,
+          "currency": "RUB",
+          "date_from": "2026-03-06",
+          "nights": 3,
+          "operator": "Tez Tour",
+          "hotel_id": 1038,
+          "hotel_name": "Crystal Bay Resort Ras Al Khaimah",
+          "stars": 3,
+          "rating": 3.5,
+          "meal": "BB",
+          "room": "Deluxe",
+          "country_name": "UAE",
+          "city_name": "Ras Al Khaimah",
+          "flag_emoji": "🇦🇪",
+          "image_url": "/assets/hotels/uae/uae_03.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "fcf2fb0e925f689723c13e8c8d0c5e1269f36f98c5a7f0cd4af19f0ccffc7713"
+          }
+        }
+      ],
+      "lastRequestId": "mock-ef35840fda75"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+id	group	initial_state	title	user_message	expected_intent	expected_slots	expected_bot_action	expected_message_snapshot_key	tags	notes
+g01_01	1	empty	/start shows intro	/start	search	{}	reply	g01_01	start	
+g01_02	1	empty	cancel from idle	отмена	cancel	{}	reply	g01_02	cancel	
+g01_03	1	empty	cancel alias /cancel	/cancel	cancel	{}	reply	g01_03	cancel	
+g01_04	1	empty	cancel from ai nights	Привет, хочу в Турцию	cancel	{}	ask_missing	g01_04	cancel|ai	
+g01_05	1	mid-flow/guided	cancel from guided budget	/start	cancel	{}	ask_missing	g01_05	cancel|guided	
+g01_06	1	empty	cancel phrase начать заново	начать заново	cancel	{}	reply	g01_06	cancel	
+g02_01	2	empty	/help response	/help	help	{}	reply	g02_01	help	
+g02_02	2	empty	smalltalk hello	привет	smalltalk	{}	reply	g02_02	smalltalk	
+g02_03	2	empty	capabilities question	что ты умеешь?	help	{}	reply	g02_03	meta	
+g02_04	2	empty	neutral thanks in ai state	хочу в турцию	smalltalk	{}	ask_missing	g02_04	smalltalk|state	
+g03_01	3	empty	unsupported Africa prompt	Покажи Африку	search	{}	show_country_keyboard	g03_01	unsupported-country|required	
+g03_02	3	empty	unsupported Africa with nights	Африка на 7 ночей	search	{}	show_country_keyboard	g03_02	unsupported-country|required	
+g03_03	3	empty	supported Turkey ru	хочу в Турцию	search	{}	ask_missing	g03_03	country	
+g03_04	3	empty	supported Thailand ru	Таиланд	search	{}	reply	g03_04	country	
+g03_05	3	empty	unsupported Italy 3 days	Италия на 3 дня	search	{}	show_country_keyboard	g03_05	unsupported-country|required	
+g03_06	3	post-results	country switch after prior search text	Турция 7 ночей до 120к	refine	{"country":"switch"}	reply	g03_06	followup|country-switch	
+g04_01	4	empty	7 nights phrase	Турция на 7 ночей	search	{"nights":true}	ask_missing	g04_01	nights	
+g04_02	4	empty	week phrase	Турция на неделю	search	{"nights":true}	ask_missing	g04_02	nights	
+g04_03	4	empty	10 days phrase	Египет на 10 дней до 100к	search	{"nights":true}	run_search	g04_03	nights|one-shot	
+g04_04	4	empty	two weeks phrase	Мальдивы на две недели	search	{"nights":true}	ask_missing	g04_04	nights	
+g04_05	4	empty	weekend phrase	Таиланд на выходные	search	{"nights":true}	ask_missing	g04_05	nights|required	
+g04_06	4	empty	nights typed while asked	Турция	search	{"nights":true}	ask_missing	g04_06	nights|typing	
+g05_01	5	empty	budget do 120k	Турция 7 ночей до 120к	search	{"budget":true}	run_search	g05_01	budget|one-shot	
+g05_02	5	empty	budget raw 120000	Турция 7 ночей 120000	search	{"budget":true}	reply	g05_02	budget	
+g05_03	5	empty	budget around 100k	Покажи туры на Мальдивы в сентябре в районе 100000	search	{"budget":true}	ask_missing	g05_03	budget|slot-filling|required	
+g05_04	5	empty	budget around phrase около	Египет около 100к на 7 ночей	search	{"budget":true}	run_search	g05_04	budget	
+g05_05	5	post-results	clarification preserves country Egypt	Египет около 120к	refine	{"budget":true}	ask_missing	g05_05	budget|followup|required	
+g05_06	5	empty	budget range 90-120k	Турция 7 ночей 90–120к	search	{"budget":true}	run_search	g05_06	budget|range|required	
+g06_01	6	empty	September month phrase	Хочу в Турцию в сентябре	search	{"month":true}	ask_missing	g06_01	month	
+g06_02	6	empty	09 month numeric	Турция 09	search	{"month":true}	ask_missing	g06_02	month	
+g06_03	6	post-results	November follow-up	Турция 7 ночей до 120к	refine	{"month":true}	run_refine_search	g06_03	followup|month|required	
+g06_04	6	empty	Autumn phrase	Турция осенью 7 ночей до 120к	search	{"month":true}	reply	g06_04	period	
+g06_05	6	empty	Next month phrase	Египет в ближайший месяц	search	{"month":true}	ask_missing	g06_05	period	
+g06_06	6	empty	1-2 months phrase	Таиланд через 1-2 месяца	search	{"month":true}	ask_missing	g06_06	period	
+g07_01	7	empty	AI phrase	Турция 7 ночей до 120к всё включено	search	{"meal":true}	reply	g07_01	meal|required	
+g07_02	7	empty	BB phrase	Египет 7 ночей до 100к завтраки	search	{"meal":true}	reply	g07_02	meal	
+g07_03	7	empty	No meals phrase	Таиланд 7 ночей до 120к без питания	search	{"meal":true}	reply	g07_03	meal	
+g07_04	7	post-results	followup meal refine	Турция 7 ночей до 120к	refine	{"meal":true}	run_refine_search	g07_04	meal|followup|required	
+g08_01	8	empty	Турция на 7 ночей до 120 000 ₽, всё включено	Турция на 7 ночей до 120 000 ₽, всё включено	search	{}	run_search	g08_01	one-shot|required	
+g08_02	8	empty	Мальдивы сентябрь 10 ночей 100k range	Мальдивы в сентябре в районе 100000 на 10 ночей	search	{}	run_search	g08_02	one-shot|required	
+g08_03	8	empty	ОАЭ 3 nights budget	ОАЭ 3 ночи до 100к	search	{}	run_search	g08_03	one-shot	
+g08_04	8	empty	Египет на выходные до 100к	Египет на выходные до 100к	search	{}	run_search	g08_04	one-shot|required|country	
+g08_05	8	empty	Thailand weekends	Таиланд на выходные	search	{}	ask_missing	g08_05	one-shot|required	
+g08_06	8	empty	UAE breakfasts one-shot	ОАЭ 7 ночей до 150к завтраки	search	{}	run_search	g08_06	one-shot	
+g08_07	8	empty	Seychelles one-shot	Сейшелы 10 ночей до 250к	search	{}	run_search	g08_07	one-shot	
+g08_08	8	empty	Maldives low budget one-shot	Мальдивы 7 ночей до 100к	search	{}	run_search	g08_08	one-shot	
+g09_01	9	mid-flow/guided	guided start->country->budget	/start	search	{}	reply	g09_01	guided	
+g09_02	9	mid-flow/guided	guided budget manual typing	/start	search	{}	ask_missing	g09_02	guided	
+g09_03	9	empty	ai nights preset 7	Привет, хочу в Турцию	search	{}	ask_missing	g09_03	ai|buttons	
+g09_04	9	empty	ai budget preset 100k after nights	Турция	search	{}	run_search	g09_04	ai|buttons	
+g09_05	9	empty	manual nights 15 in ai	Турция	search	{}	run_search	g09_05	ai|manual	
+g09_06	9	mid-flow/guided	guided full chain to results	/start	search	{}	run_search	g09_06	guided|full	
+g10_01	10	post-results	followup сентябрь	Турция 7 ночей до 120к всё включено	refine	{"month":true}	run_refine_search	g10_01	followup|month|required	
+g10_02	10	post-results	followup ноябрь	Турция 7 ночей до 120к всё включено	refine	{"month":true}	run_refine_search	g10_02	followup|month	
+g10_03	10	post-results	followup cheaper	Турция 7 ночей до 120к всё включено	refine	{}	run_refine_search	g10_03	followup|sort	
+g10_04	10	post-results	followup expensive	Турция 7 ночей до 120к всё включено	refine	{}	run_refine_search	g10_04	followup|sort	
+g10_05	10	post-results	followup 14 nights	Турция 7 ночей до 120к всё включено	refine	{"nights":true}	run_refine_search	g10_05	followup|nights	
+g10_06	10	post-results	followup to 250k	Турция 7 ночей до 120к всё включено	refine	{"budget":true}	run_refine_search	g10_06	followup|budget	
+g10_07	10	post-results	followup Seychelles country switch	Турция 7 ночей до 120к всё включено	refine	{"country":"switch"}	reply	g10_07	followup|country-switch	
+g10_08	10	post-results	followup 10 nights + Seychelles	Турция 7 ночей до 120к всё включено	refine	{"country":"switch"}	reply	g10_08	followup|country-switch|required	
+g10_09	10	post-results	followup breakfasts	Турция 7 ночей до 120к всё включено	refine	{"meal":true}	run_refine_search	g10_09	followup|meal	
+g10_10	10	post-results	followup next month	Турция 7 ночей до 120к всё включено	refine	{"month":true}	run_refine_search	g10_10	followup|period	
+g11_01	11	empty	show more after one-shot	Турция 7 ночей до 120к	show_more	{}	reply	g11_01	buttons|pagination	
+g11_02	11	empty	filters menu opens	Турция 7 ночей до 120к	change_filters	{}	reply	g11_02	buttons|filters	
+g11_03	11	empty	filter back to results	Турция 7 ночей до 120к	change_filters	{}	reply	g11_03	buttons|filters	
+g11_04	11	empty	new search resets once	Турция 7 ночей до 120к	new_search	{}	reply	g11_04	buttons|new	
+g11_05	11	empty	change budget filter reruns	Турция 7 ночей до 120к	change_filters	{}	run_search	g11_05	buttons|filters	
+g12_01	12	empty	double tap heart dedupe	Турция 7 ночей до 120к	select_tour	{}	reply	g12_01	dedupe|heart|required	
+g12_02	12	post-results	rapid refine messages no duplicate stale cards	Турция 7 ночей до 120к всё включено	refine	{}	run_refine_search	g12_02	race|followup	
+g12_03	12	empty	callback ack country	/start	search	{}	ask_missing	g12_03	callback-ack	
+g12_04	12	empty	callback ack more	Турция 7 ночей до 120к	show_more	{}	reply	g12_04	callback-ack|pagination	
+g13_01	13	empty	invalid nights out of range	Турция	search	{}	reply	g13_01	validation	
+g13_02	13	mid-flow/guided	invalid budget negative	/start	search	{}	reply	g13_02	validation|guided	
+g14_01	14	empty	country keyboard compact 2x3	/start	search	{}	reply	g14_01	keyboard|countries|required	
+g14_02	14	empty	ai nights budget keyboards compact	хочу в Турцию	search	{}	ask_missing	g14_02	keyboard|ai	

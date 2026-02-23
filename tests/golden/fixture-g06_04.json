@@ -1,0 +1,318 @@
+{
+  "messages": [
+    "🔎 Анализирую запрос…",
+    "Нашла 5 туров. Показываю все.",
+    "<b>Asteria Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.6\n📅 07.10.2026 • 7 ночей\n🍽 Завтраки • 🛏 Superior\n💸 <b>63 400 ₽</b>\n🧳 Coral",
+    "<b>Sea Breeze Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.8\n📅 04.11.2026 • 7 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>67 400 ₽</b>\n🧳 Coral",
+    "<b>Marina Crown Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.8\n📅 24.10.2026 • 7 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>69 700 ₽</b>\n🧳 Coral",
+    "<b>Blue Horizon Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.1\n📅 04.11.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>71 200 ₽</b>\n🧳 Coral",
+    "<b>Marina Crown Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.5\n📅 17.09.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 500 ₽</b>\n🧳 Anex",
+    "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+    "Действия:"
+  ],
+  "calls": [
+    {
+      "method": "sendMessage",
+      "text": "🔎 Анализирую запрос…"
+    },
+    {
+      "method": "sendMessage",
+      "text": "Нашла 5 туров. Показываю все."
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Asteria Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.6\n📅 07.10.2026 • 7 ночей\n🍽 Завтраки • 🛏 Superior\n💸 <b>63 400 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-9b351f1871a4:1069"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1069"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Sea Breeze Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.8\n📅 04.11.2026 • 7 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>67 400 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-9b351f1871a4:1020"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1020"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Marina Crown Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.8\n📅 24.10.2026 • 7 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>69 700 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-9b351f1871a4:1057"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1057"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Blue Horizon Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.1\n📅 04.11.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>71 200 ₽</b>\n🧳 Coral",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-9b351f1871a4:1090"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1090"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendPhoto",
+      "caption": "<b>Marina Crown Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.5\n📅 17.09.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 500 ₽</b>\n🧳 Anex",
+      "keyboard": [
+        [
+          {
+            "text": "💚 Хочу этот тур",
+            "callback_data": "want:mock-9b351f1871a4:1071"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Сохранить тур",
+            "callback_data": "fav:tour:1071"
+          }
+        ]
+      ]
+    },
+    {
+      "method": "sendMessage",
+      "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+    },
+    {
+      "method": "sendMessage",
+      "text": "Действия:",
+      "keyboard": [
+        [
+          {
+            "text": "🔁 Показать ещё",
+            "callback_data": "more:mock-9b351f1871a4"
+          },
+          {
+            "text": "⚙️ Изменить фильтры",
+            "callback_data": "filters"
+          }
+        ],
+        [
+          {
+            "text": "⭐ Избранное",
+            "callback_data": "fav:list"
+          }
+        ],
+        [
+          {
+            "text": "🔎 Новый поиск",
+            "callback_data": "new"
+          }
+        ]
+      ]
+    }
+  ],
+  "finalState": {
+    "step": "idle",
+    "countryId": 47,
+    "nightsMin": 7,
+    "nightsMax": 7,
+    "budgetMax": 120000,
+    "period": "autumn",
+    "meal": "ANY",
+    "offset": 0,
+    "limit": 5,
+    "lastRequestId": "mock-9b351f1871a4",
+    "lastSearchArgs": {
+      "country_id": 47,
+      "departure_id": 1,
+      "date_from": "2026-09-01",
+      "date_to": "2026-09-30",
+      "nights_min": 7,
+      "nights_max": 7,
+      "adults": 2,
+      "children": 0,
+      "country_name": "Turkey",
+      "period": "autumn",
+      "budget_max": 120000,
+      "meal": 0,
+      "rating": 0,
+      "limit": 5,
+      "offset": 0,
+      "sort": "price_asc"
+    },
+    "aiMode": false,
+    "aiAwaiting": null,
+    "activeSearchSeq": 1,
+    "searchContext": {
+      "countryId": 47,
+      "countryName": "Турция",
+      "dateFrom": "2026-09-01",
+      "dateTo": "2026-09-30",
+      "period": "autumn",
+      "nightsMin": 7,
+      "nightsMax": 7,
+      "budgetMax": 120000,
+      "meal": "ANY",
+      "ratingMin": 0,
+      "adults": 2,
+      "children": 0,
+      "lastArgs": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-09-01",
+        "date_to": "2026-09-30",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "period": "autumn",
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "lastResults": [
+        {
+          "price": 63400,
+          "currency": "RUB",
+          "date_from": "2026-10-07",
+          "nights": 7,
+          "operator": "Coral",
+          "hotel_id": 1069,
+          "hotel_name": "Asteria Resort Alanya",
+          "stars": 3,
+          "rating": 3.6,
+          "meal": "BB",
+          "room": "Superior",
+          "country_name": "Turkey",
+          "city_name": "Alanya",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_01.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "5b4744e138e484e6dbf4cb5d18b0c3a78fe43f625e282bc8f73b58f365405762"
+          }
+        },
+        {
+          "price": 67400,
+          "currency": "RUB",
+          "date_from": "2026-11-04",
+          "nights": 7,
+          "operator": "Coral",
+          "hotel_id": 1020,
+          "hotel_name": "Sea Breeze Resort Side",
+          "stars": 3,
+          "rating": 3.8,
+          "meal": "BB",
+          "room": "Suite",
+          "country_name": "Turkey",
+          "city_name": "Side",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_05.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "5b4744e138e484e6dbf4cb5d18b0c3a78fe43f625e282bc8f73b58f365405762"
+          }
+        },
+        {
+          "price": 69700,
+          "currency": "RUB",
+          "date_from": "2026-10-24",
+          "nights": 7,
+          "operator": "Coral",
+          "hotel_id": 1057,
+          "hotel_name": "Marina Crown Resort Antalya",
+          "stars": 3,
+          "rating": 3.8,
+          "meal": "RO",
+          "room": "Family Room",
+          "country_name": "Turkey",
+          "city_name": "Antalya",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_08.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "5b4744e138e484e6dbf4cb5d18b0c3a78fe43f625e282bc8f73b58f365405762"
+          }
+        },
+        {
+          "price": 71200,
+          "currency": "RUB",
+          "date_from": "2026-11-04",
+          "nights": 7,
+          "operator": "Coral",
+          "hotel_id": 1090,
+          "hotel_name": "Blue Horizon Side",
+          "stars": 3,
+          "rating": 3.1,
+          "meal": "RO",
+          "room": "Deluxe",
+          "country_name": "Turkey",
+          "city_name": "Side",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_07.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "5b4744e138e484e6dbf4cb5d18b0c3a78fe43f625e282bc8f73b58f365405762"
+          }
+        },
+        {
+          "price": 71500,
+          "currency": "RUB",
+          "date_from": "2026-09-17",
+          "nights": 7,
+          "operator": "Anex",
+          "hotel_id": 1071,
+          "hotel_name": "Marina Crown Resort Kemer",
+          "stars": 3,
+          "rating": 3.5,
+          "meal": "HB",
+          "room": "Superior",
+          "country_name": "Turkey",
+          "city_name": "Kemer",
+          "flag_emoji": "🇹🇷",
+          "image_url": "/assets/hotels/turkey/turkey_06.jpg",
+          "raw": {
+            "provider": "mock",
+            "seed": "5b4744e138e484e6dbf4cb5d18b0c3a78fe43f625e282bc8f73b58f365405762"
+          }
+        }
+      ],
+      "lastRequestId": "mock-9b351f1871a4"
+    }
+  }
+}

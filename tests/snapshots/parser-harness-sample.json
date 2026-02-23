@@ -1,0 +1,1177 @@
+{
+  "g04_01": {
+    "messages": [
+      "Поняла: Турция. Напишите «отмена», если хотите прервать.",
+      "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже."
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "Поняла: Турция. Напишите «отмена», если хотите прервать."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже.",
+        "keyboard": [
+          [
+            {
+              "text": "100k",
+              "callback_data": "ai:budget:100000"
+            },
+            {
+              "text": "150k",
+              "callback_data": "ai:budget:150000"
+            },
+            {
+              "text": "250k",
+              "callback_data": "ai:budget:250000"
+            }
+          ]
+        ]
+      }
+    ],
+    "finalState": {
+      "step": "idle",
+      "nightsMin": 6,
+      "nightsMax": 10,
+      "meal": "ANY",
+      "offset": 0,
+      "limit": 5,
+      "aiMode": true,
+      "aiAwaiting": "budget"
+    }
+  },
+  "g04_02": {
+    "messages": [
+      "Поняла: Турция. Напишите «отмена», если хотите прервать.",
+      "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже."
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "Поняла: Турция. Напишите «отмена», если хотите прервать."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже.",
+        "keyboard": [
+          [
+            {
+              "text": "100k",
+              "callback_data": "ai:budget:100000"
+            },
+            {
+              "text": "150k",
+              "callback_data": "ai:budget:150000"
+            },
+            {
+              "text": "250k",
+              "callback_data": "ai:budget:250000"
+            }
+          ]
+        ]
+      }
+    ],
+    "finalState": {
+      "step": "idle",
+      "nightsMin": 6,
+      "nightsMax": 10,
+      "meal": "ANY",
+      "offset": 0,
+      "limit": 5,
+      "aiMode": true,
+      "aiAwaiting": "budget"
+    }
+  },
+  "g04_03": {
+    "messages": [
+      "🔎 Анализирую запрос…",
+      "Нашла 5 туров. Показываю все.",
+      "<b>Royal Palm Resort Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 4.0\n📅 31.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>72 100 ₽</b>\n🧳 Biblio Globus",
+      "<b>Sea Breeze Resort Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 3.7\n📅 24.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Standard\n💸 <b>73 000 ₽</b>\n🧳 Anex",
+      "<b>Imperial Sands Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 3.9\n📅 31.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>74 500 ₽</b>\n🧳 Anex",
+      "<b>Sea Breeze Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 3.8\n📅 07.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Family Room\n💸 <b>76 800 ₽</b>\n🧳 Biblio Globus",
+      "<b>Coral Elite Marsa Alam</b>\n📍 🇪🇬 Egypt, Marsa Alam\n⭐️ 3.6\n📅 19.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>77 000 ₽</b>\n🧳 Fun&amp;Sun",
+      "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+      "Действия:"
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "🔎 Анализирую запрос…"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Нашла 5 туров. Показываю все."
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Royal Palm Resort Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 4.0\n📅 31.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Junior Suite\n💸 <b>72 100 ₽</b>\n🧳 Biblio Globus",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-b3e51a3b25db:1023"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1023"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Sea Breeze Resort Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 3.7\n📅 24.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Standard\n💸 <b>73 000 ₽</b>\n🧳 Anex",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-b3e51a3b25db:1066"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1066"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Imperial Sands Hurghada</b>\n📍 🇪🇬 Egypt, Hurghada\n⭐️ 3.9\n📅 31.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Suite\n💸 <b>74 500 ₽</b>\n🧳 Anex",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-b3e51a3b25db:1064"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1064"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Sea Breeze Sharm El Sheikh</b>\n📍 🇪🇬 Egypt, Sharm El Sheikh\n⭐️ 3.8\n📅 07.10.2026 • 10 ночей\n🍽 Завтрак + ужин • 🛏 Family Room\n💸 <b>76 800 ₽</b>\n🧳 Biblio Globus",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-b3e51a3b25db:1029"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1029"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Coral Elite Marsa Alam</b>\n📍 🇪🇬 Egypt, Marsa Alam\n⭐️ 3.6\n📅 19.10.2026 • 10 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>77 000 ₽</b>\n🧳 Fun&amp;Sun",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-b3e51a3b25db:1011"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1011"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Действия:",
+        "keyboard": [
+          [
+            {
+              "text": "🔁 Показать ещё",
+              "callback_data": "more:mock-b3e51a3b25db"
+            },
+            {
+              "text": "⚙️ Изменить фильтры",
+              "callback_data": "filters"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Избранное",
+              "callback_data": "fav:list"
+            }
+          ],
+          [
+            {
+              "text": "🔎 Новый поиск",
+              "callback_data": "new"
+            }
+          ]
+        ]
+      }
+    ],
+    "finalState": {
+      "step": "idle",
+      "countryId": 54,
+      "nightsMin": 10,
+      "nightsMax": 10,
+      "budgetMax": 100000,
+      "meal": "ANY",
+      "offset": 0,
+      "limit": 5,
+      "lastRequestId": "mock-b3e51a3b25db",
+      "lastSearchArgs": {
+        "country_id": 54,
+        "departure_id": 1,
+        "date_from": "2026-10-01",
+        "date_to": "2026-10-31",
+        "nights_min": 10,
+        "nights_max": 10,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Egypt",
+        "budget_max": 100000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "aiMode": false,
+      "aiAwaiting": null,
+      "activeSearchSeq": 1,
+      "searchContext": {
+        "countryId": 54,
+        "countryName": "Египет",
+        "dateFrom": "2026-10-01",
+        "dateTo": "2026-10-31",
+        "nightsMin": 10,
+        "nightsMax": 10,
+        "budgetMax": 100000,
+        "meal": "ANY",
+        "ratingMin": 0,
+        "adults": 2,
+        "children": 0,
+        "lastArgs": {
+          "country_id": 54,
+          "departure_id": 1,
+          "date_from": "2026-10-01",
+          "date_to": "2026-10-31",
+          "nights_min": 10,
+          "nights_max": 10,
+          "adults": 2,
+          "children": 0,
+          "country_name": "Egypt",
+          "budget_max": 100000,
+          "meal": 0,
+          "rating": 0,
+          "limit": 5,
+          "offset": 0,
+          "sort": "price_asc"
+        },
+        "lastResults": [
+          {
+            "price": 72100,
+            "currency": "RUB",
+            "date_from": "2026-10-31",
+            "nights": 10,
+            "operator": "Biblio Globus",
+            "hotel_id": 1023,
+            "hotel_name": "Royal Palm Resort Hurghada",
+            "stars": 3,
+            "rating": 4,
+            "meal": "HB",
+            "room": "Junior Suite",
+            "country_name": "Egypt",
+            "city_name": "Hurghada",
+            "flag_emoji": "🇪🇬",
+            "image_url": "/assets/hotels/egypt/egypt_05.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "2a8cd22c7d1a9026a0b598395d66f93487ff0ee44925c3369349d4d251029fe3"
+            }
+          },
+          {
+            "price": 73000,
+            "currency": "RUB",
+            "date_from": "2026-10-24",
+            "nights": 10,
+            "operator": "Anex",
+            "hotel_id": 1066,
+            "hotel_name": "Sea Breeze Resort Hurghada",
+            "stars": 3,
+            "rating": 3.7,
+            "meal": "BB",
+            "room": "Standard",
+            "country_name": "Egypt",
+            "city_name": "Hurghada",
+            "flag_emoji": "🇪🇬",
+            "image_url": "/assets/hotels/egypt/egypt_04.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "2a8cd22c7d1a9026a0b598395d66f93487ff0ee44925c3369349d4d251029fe3"
+            }
+          },
+          {
+            "price": 74500,
+            "currency": "RUB",
+            "date_from": "2026-10-31",
+            "nights": 10,
+            "operator": "Anex",
+            "hotel_id": 1064,
+            "hotel_name": "Imperial Sands Hurghada",
+            "stars": 3,
+            "rating": 3.9,
+            "meal": "BB",
+            "room": "Suite",
+            "country_name": "Egypt",
+            "city_name": "Hurghada",
+            "flag_emoji": "🇪🇬",
+            "image_url": "/assets/hotels/egypt/egypt_06.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "2a8cd22c7d1a9026a0b598395d66f93487ff0ee44925c3369349d4d251029fe3"
+            }
+          },
+          {
+            "price": 76800,
+            "currency": "RUB",
+            "date_from": "2026-10-07",
+            "nights": 10,
+            "operator": "Biblio Globus",
+            "hotel_id": 1029,
+            "hotel_name": "Sea Breeze Sharm El Sheikh",
+            "stars": 3,
+            "rating": 3.8,
+            "meal": "HB",
+            "room": "Family Room",
+            "country_name": "Egypt",
+            "city_name": "Sharm El Sheikh",
+            "flag_emoji": "🇪🇬",
+            "image_url": "/assets/hotels/egypt/egypt_07.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "2a8cd22c7d1a9026a0b598395d66f93487ff0ee44925c3369349d4d251029fe3"
+            }
+          },
+          {
+            "price": 77000,
+            "currency": "RUB",
+            "date_from": "2026-10-19",
+            "nights": 10,
+            "operator": "Fun&Sun",
+            "hotel_id": 1011,
+            "hotel_name": "Coral Elite Marsa Alam",
+            "stars": 3,
+            "rating": 3.6,
+            "meal": "BB",
+            "room": "Family Room",
+            "country_name": "Egypt",
+            "city_name": "Marsa Alam",
+            "flag_emoji": "🇪🇬",
+            "image_url": "/assets/hotels/egypt/egypt_08.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "2a8cd22c7d1a9026a0b598395d66f93487ff0ee44925c3369349d4d251029fe3"
+            }
+          }
+        ],
+        "lastRequestId": "mock-b3e51a3b25db"
+      }
+    }
+  },
+  "g04_04": {
+    "messages": [
+      "Поняла: Мальдивы. Напишите «отмена», если хотите прервать.",
+      "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже."
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "Поняла: Мальдивы. Напишите «отмена», если хотите прервать."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже.",
+        "keyboard": [
+          [
+            {
+              "text": "100k",
+              "callback_data": "ai:budget:100000"
+            },
+            {
+              "text": "150k",
+              "callback_data": "ai:budget:150000"
+            },
+            {
+              "text": "250k",
+              "callback_data": "ai:budget:250000"
+            }
+          ]
+        ]
+      }
+    ],
+    "finalState": {
+      "step": "idle",
+      "nightsMin": 6,
+      "nightsMax": 10,
+      "meal": "ANY",
+      "offset": 0,
+      "limit": 5,
+      "aiMode": true,
+      "aiAwaiting": "budget"
+    }
+  },
+  "g04_05": {
+    "messages": [
+      "Поняла: Таиланд. Напишите «отмена», если хотите прервать.",
+      "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже."
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "Поняла: Таиланд. Напишите «отмена», если хотите прервать."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже.",
+        "keyboard": [
+          [
+            {
+              "text": "100k",
+              "callback_data": "ai:budget:100000"
+            },
+            {
+              "text": "150k",
+              "callback_data": "ai:budget:150000"
+            },
+            {
+              "text": "250k",
+              "callback_data": "ai:budget:250000"
+            }
+          ]
+        ]
+      }
+    ],
+    "finalState": {
+      "step": "idle",
+      "nightsMin": 6,
+      "nightsMax": 10,
+      "meal": "ANY",
+      "offset": 0,
+      "limit": 5,
+      "aiMode": true,
+      "aiAwaiting": "budget"
+    }
+  },
+  "g04_06": {
+    "messages": [
+      "Поняла: Турция. Напишите «отмена», если хотите прервать.",
+      "Супер. На сколько ночей планируете? Напишите число (например 7) или выберите вариант ниже.",
+      "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже."
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "Поняла: Турция. Напишите «отмена», если хотите прервать."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Супер. На сколько ночей планируете? Напишите число (например 7) или выберите вариант ниже.",
+        "keyboard": [
+          [
+            {
+              "text": "7",
+              "callback_data": "ai:nights:7"
+            },
+            {
+              "text": "10",
+              "callback_data": "ai:nights:10"
+            },
+            {
+              "text": "14",
+              "callback_data": "ai:nights:14"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Какой бюджет максимум на двоих/на поездку? Напишите число (например 120000) или выберите вариант ниже.",
+        "keyboard": [
+          [
+            {
+              "text": "100k",
+              "callback_data": "ai:budget:100000"
+            },
+            {
+              "text": "150k",
+              "callback_data": "ai:budget:150000"
+            },
+            {
+              "text": "250k",
+              "callback_data": "ai:budget:250000"
+            }
+          ]
+        ]
+      }
+    ],
+    "finalState": {
+      "step": "idle",
+      "nightsMin": 6,
+      "nightsMax": 10,
+      "meal": "ANY",
+      "offset": 0,
+      "limit": 5,
+      "aiMode": true,
+      "aiAwaiting": "budget"
+    }
+  },
+  "g05_01": {
+    "messages": [
+      "🔎 Анализирую запрос…",
+      "Нашла 5 туров. Показываю все.",
+      "<b>Crystal Bay Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>60 300 ₽</b>\n🧳 Pegas",
+      "<b>Vista Mare Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 18.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 000 ₽</b>\n🧳 Coral",
+      "<b>Sunwave Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.0\n📅 25.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>70 600 ₽</b>\n🧳 Anex",
+      "<b>Imperial Sands Resort Side</b>\n📍 🇹🇷 Turkey, Side\n📅 10.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>70 800 ₽</b>\n🧳 Anex",
+      "<b>Crystal Bay Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 01.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 100 ₽</b>\n🧳 Tez Tour",
+      "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+      "Действия:"
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "🔎 Анализирую запрос…"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Нашла 5 туров. Показываю все."
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Crystal Bay Resort Belek</b>\n📍 🇹🇷 Turkey, Belek\n⭐️ 3.3\n📅 11.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Suite\n💸 <b>60 300 ₽</b>\n🧳 Pegas",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1011"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1011"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Vista Mare Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.0\n📅 18.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Deluxe\n💸 <b>69 000 ₽</b>\n🧳 Coral",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1050"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1050"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Sunwave Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 3.0\n📅 25.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Standard\n💸 <b>70 600 ₽</b>\n🧳 Anex",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1057"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1057"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Imperial Sands Resort Side</b>\n📍 🇹🇷 Turkey, Side\n📅 10.07.2026 • 7 ночей\n🍽 Завтраки • 🛏 Family Room\n💸 <b>70 800 ₽</b>\n🧳 Anex",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1001"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1001"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Crystal Bay Resort Alanya</b>\n📍 🇹🇷 Turkey, Alanya\n⭐️ 3.4\n📅 01.07.2026 • 7 ночей\n🍽 Завтрак + ужин • 🛏 Superior\n💸 <b>71 100 ₽</b>\n🧳 Tez Tour",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-adca21747853:1006"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1006"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Действия:",
+        "keyboard": [
+          [
+            {
+              "text": "🔁 Показать ещё",
+              "callback_data": "more:mock-adca21747853"
+            },
+            {
+              "text": "⚙️ Изменить фильтры",
+              "callback_data": "filters"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Избранное",
+              "callback_data": "fav:list"
+            }
+          ],
+          [
+            {
+              "text": "🔎 Новый поиск",
+              "callback_data": "new"
+            }
+          ]
+        ]
+      }
+    ],
+    "finalState": {
+      "step": "idle",
+      "countryId": 47,
+      "nightsMin": 7,
+      "nightsMax": 7,
+      "budgetMax": 120000,
+      "meal": "ANY",
+      "offset": 0,
+      "limit": 5,
+      "lastRequestId": "mock-adca21747853",
+      "lastSearchArgs": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_max": 120000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "aiMode": false,
+      "aiAwaiting": null,
+      "activeSearchSeq": 1,
+      "searchContext": {
+        "countryId": 47,
+        "countryName": "Турция",
+        "dateFrom": "2026-07-01",
+        "dateTo": "2026-07-31",
+        "nightsMin": 7,
+        "nightsMax": 7,
+        "budgetMax": 120000,
+        "meal": "ANY",
+        "ratingMin": 0,
+        "adults": 2,
+        "children": 0,
+        "lastArgs": {
+          "country_id": 47,
+          "departure_id": 1,
+          "date_from": "2026-07-01",
+          "date_to": "2026-07-31",
+          "nights_min": 7,
+          "nights_max": 7,
+          "adults": 2,
+          "children": 0,
+          "country_name": "Turkey",
+          "budget_max": 120000,
+          "meal": 0,
+          "rating": 0,
+          "limit": 5,
+          "offset": 0,
+          "sort": "price_asc"
+        },
+        "lastResults": [
+          {
+            "price": 60300,
+            "currency": "RUB",
+            "date_from": "2026-07-11",
+            "nights": 7,
+            "operator": "Pegas",
+            "hotel_id": 1011,
+            "hotel_name": "Crystal Bay Resort Belek",
+            "stars": 3,
+            "rating": 3.3,
+            "meal": "RO",
+            "room": "Suite",
+            "country_name": "Turkey",
+            "city_name": "Belek",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_02.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "46af209598267682e0d89056d425a75a1fe63e48da27c3091b92b4453c2e9857"
+            }
+          },
+          {
+            "price": 69000,
+            "currency": "RUB",
+            "date_from": "2026-07-18",
+            "nights": 7,
+            "operator": "Coral",
+            "hotel_id": 1050,
+            "hotel_name": "Vista Mare Resort Side",
+            "stars": 3,
+            "rating": 3,
+            "meal": "RO",
+            "room": "Deluxe",
+            "country_name": "Turkey",
+            "city_name": "Side",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_07.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "46af209598267682e0d89056d425a75a1fe63e48da27c3091b92b4453c2e9857"
+            }
+          },
+          {
+            "price": 70600,
+            "currency": "RUB",
+            "date_from": "2026-07-25",
+            "nights": 7,
+            "operator": "Anex",
+            "hotel_id": 1057,
+            "hotel_name": "Sunwave Resort Kemer",
+            "stars": 3,
+            "rating": 3,
+            "meal": "HB",
+            "room": "Standard",
+            "country_name": "Turkey",
+            "city_name": "Kemer",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_03.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "46af209598267682e0d89056d425a75a1fe63e48da27c3091b92b4453c2e9857"
+            }
+          },
+          {
+            "price": 70800,
+            "currency": "RUB",
+            "date_from": "2026-07-10",
+            "nights": 7,
+            "operator": "Anex",
+            "hotel_id": 1001,
+            "hotel_name": "Imperial Sands Resort Side",
+            "stars": 3,
+            "meal": "BB",
+            "room": "Family Room",
+            "country_name": "Turkey",
+            "city_name": "Side",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_05.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "46af209598267682e0d89056d425a75a1fe63e48da27c3091b92b4453c2e9857"
+            }
+          },
+          {
+            "price": 71100,
+            "currency": "RUB",
+            "date_from": "2026-07-01",
+            "nights": 7,
+            "operator": "Tez Tour",
+            "hotel_id": 1006,
+            "hotel_name": "Crystal Bay Resort Alanya",
+            "stars": 3,
+            "rating": 3.4,
+            "meal": "HB",
+            "room": "Superior",
+            "country_name": "Turkey",
+            "city_name": "Alanya",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_04.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "46af209598267682e0d89056d425a75a1fe63e48da27c3091b92b4453c2e9857"
+            }
+          }
+        ],
+        "lastRequestId": "mock-adca21747853"
+      }
+    }
+  },
+  "g05_02": {
+    "messages": [
+      "🔎 Анализирую запрос…",
+      "Нашла 5 туров. Показываю все.",
+      "<b>Crystal Bay Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 4.6\n📅 02.07.2026 • 7 ночей\n🍽 3-разовое питание • 🛏 Superior\n💸 <b>108 200 ₽</b>\n🧳 Fun&amp;Sun",
+      "<b>Coral Elite Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.8\n📅 22.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>108 600 ₽</b>\n🧳 Fun&amp;Sun",
+      "<b>Marina Crown Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.9\n📅 31.07.2026 • 7 ночей\n🍽 3-разовое питание • 🛏 Superior\n💸 <b>109 500 ₽</b>\n🧳 Anex",
+      "<b>Imperial Sands Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 5.0\n📅 29.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>113 800 ₽</b>\n🧳 TUI",
+      "<b>Marina Crown Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.9\n📅 22.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>114 540 ₽</b>\n🧳 Biblio Globus",
+      "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут.",
+      "Действия:"
+    ],
+    "calls": [
+      {
+        "method": "sendMessage",
+        "text": "🔎 Анализирую запрос…"
+      },
+      {
+        "method": "sendMessage",
+        "text": "Нашла 5 туров. Показываю все."
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Crystal Bay Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 4.6\n📅 02.07.2026 • 7 ночей\n🍽 3-разовое питание • 🛏 Superior\n💸 <b>108 200 ₽</b>\n🧳 Fun&amp;Sun",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-bf01cd24c288:1076"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1076"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Coral Elite Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.8\n📅 22.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>108 600 ₽</b>\n🧳 Fun&amp;Sun",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-bf01cd24c288:1072"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1072"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Marina Crown Resort Antalya</b>\n📍 🇹🇷 Turkey, Antalya\n⭐️ 3.9\n📅 31.07.2026 • 7 ночей\n🍽 3-разовое питание • 🛏 Superior\n💸 <b>109 500 ₽</b>\n🧳 Anex",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-bf01cd24c288:1051"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1051"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Imperial Sands Resort Kemer</b>\n📍 🇹🇷 Turkey, Kemer\n⭐️ 5.0\n📅 29.07.2026 • 7 ночей\n🍽 Без питания • 🛏 Family Room\n💸 <b>113 800 ₽</b>\n🧳 TUI",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-bf01cd24c288:1040"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1040"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendPhoto",
+        "caption": "<b>Marina Crown Resort Side</b>\n📍 🇹🇷 Turkey, Side\n⭐️ 3.9\n📅 22.07.2026 • 7 ночей\n🍽 Всё включено • 🛏 Deluxe\n💸 <b>114 540 ₽</b>\n🧳 Biblio Globus",
+        "keyboard": [
+          [
+            {
+              "text": "💚 Хочу этот тур",
+              "callback_data": "want:mock-bf01cd24c288:1031"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Сохранить тур",
+              "callback_data": "fav:tour:1031"
+            }
+          ]
+        ]
+      },
+      {
+        "method": "sendMessage",
+        "text": "Выберите тур и нажмите 💚 — мы уточним наличие и цену. Обычно отвечаем в течение 5–10 минут."
+      },
+      {
+        "method": "sendMessage",
+        "text": "Действия:",
+        "keyboard": [
+          [
+            {
+              "text": "🔁 Показать ещё",
+              "callback_data": "more:mock-bf01cd24c288"
+            },
+            {
+              "text": "⚙️ Изменить фильтры",
+              "callback_data": "filters"
+            }
+          ],
+          [
+            {
+              "text": "⭐ Избранное",
+              "callback_data": "fav:list"
+            }
+          ],
+          [
+            {
+              "text": "🔎 Новый поиск",
+              "callback_data": "new"
+            }
+          ]
+        ]
+      }
+    ],
+    "finalState": {
+      "step": "idle",
+      "countryId": 47,
+      "nightsMin": 7,
+      "nightsMax": 7,
+      "budgetMax": 132000,
+      "meal": "ANY",
+      "offset": 0,
+      "limit": 5,
+      "lastRequestId": "mock-bf01cd24c288",
+      "lastSearchArgs": {
+        "country_id": 47,
+        "departure_id": 1,
+        "date_from": "2026-07-01",
+        "date_to": "2026-07-31",
+        "nights_min": 7,
+        "nights_max": 7,
+        "adults": 2,
+        "children": 0,
+        "country_name": "Turkey",
+        "budget_min": 108000,
+        "budget_max": 132000,
+        "meal": 0,
+        "rating": 0,
+        "limit": 5,
+        "offset": 0,
+        "sort": "price_asc"
+      },
+      "aiMode": false,
+      "aiAwaiting": null,
+      "activeSearchSeq": 1,
+      "searchContext": {
+        "countryId": 47,
+        "countryName": "Турция",
+        "dateFrom": "2026-07-01",
+        "dateTo": "2026-07-31",
+        "nightsMin": 7,
+        "nightsMax": 7,
+        "budgetMax": 132000,
+        "budgetMin": 108000,
+        "meal": "ANY",
+        "ratingMin": 0,
+        "adults": 2,
+        "children": 0,
+        "lastArgs": {
+          "country_id": 47,
+          "departure_id": 1,
+          "date_from": "2026-07-01",
+          "date_to": "2026-07-31",
+          "nights_min": 7,
+          "nights_max": 7,
+          "adults": 2,
+          "children": 0,
+          "country_name": "Turkey",
+          "budget_min": 108000,
+          "budget_max": 132000,
+          "meal": 0,
+          "rating": 0,
+          "limit": 5,
+          "offset": 0,
+          "sort": "price_asc"
+        },
+        "lastResults": [
+          {
+            "price": 108200,
+            "currency": "RUB",
+            "date_from": "2026-07-02",
+            "nights": 7,
+            "operator": "Fun&Sun",
+            "hotel_id": 1076,
+            "hotel_name": "Crystal Bay Side",
+            "stars": 4,
+            "rating": 4.6,
+            "meal": "FB",
+            "room": "Superior",
+            "country_name": "Turkey",
+            "city_name": "Side",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_01.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "fc306a59c0d9d62968675d2c876de7d3e91432dd65f552c40b00aa3abdaa6d81"
+            }
+          },
+          {
+            "price": 108600,
+            "currency": "RUB",
+            "date_from": "2026-07-22",
+            "nights": 7,
+            "operator": "Fun&Sun",
+            "hotel_id": 1072,
+            "hotel_name": "Coral Elite Resort Antalya",
+            "stars": 4,
+            "rating": 3.8,
+            "meal": "AI",
+            "room": "Deluxe",
+            "country_name": "Turkey",
+            "city_name": "Antalya",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_02.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "fc306a59c0d9d62968675d2c876de7d3e91432dd65f552c40b00aa3abdaa6d81"
+            }
+          },
+          {
+            "price": 109500,
+            "currency": "RUB",
+            "date_from": "2026-07-31",
+            "nights": 7,
+            "operator": "Anex",
+            "hotel_id": 1051,
+            "hotel_name": "Marina Crown Resort Antalya",
+            "stars": 4,
+            "rating": 3.9,
+            "meal": "FB",
+            "room": "Superior",
+            "country_name": "Turkey",
+            "city_name": "Antalya",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_03.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "fc306a59c0d9d62968675d2c876de7d3e91432dd65f552c40b00aa3abdaa6d81"
+            }
+          },
+          {
+            "price": 113800,
+            "currency": "RUB",
+            "date_from": "2026-07-29",
+            "nights": 7,
+            "operator": "TUI",
+            "hotel_id": 1040,
+            "hotel_name": "Imperial Sands Resort Kemer",
+            "stars": 5,
+            "rating": 5,
+            "meal": "RO",
+            "room": "Family Room",
+            "country_name": "Turkey",
+            "city_name": "Kemer",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_04.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "fc306a59c0d9d62968675d2c876de7d3e91432dd65f552c40b00aa3abdaa6d81"
+            }
+          },
+          {
+            "price": 114540,
+            "currency": "RUB",
+            "date_from": "2026-07-22",
+            "nights": 7,
+            "operator": "Biblio Globus",
+            "hotel_id": 1031,
+            "hotel_name": "Marina Crown Resort Side",
+            "stars": 4,
+            "rating": 3.9,
+            "meal": "AI",
+            "room": "Deluxe",
+            "country_name": "Turkey",
+            "city_name": "Side",
+            "flag_emoji": "🇹🇷",
+            "image_url": "/assets/hotels/turkey/turkey_05.jpg",
+            "raw": {
+              "provider": "mock",
+              "seed": "fc306a59c0d9d62968675d2c876de7d3e91432dd65f552c40b00aa3abdaa6d81"
+            }
+          }
+        ],
+        "lastRequestId": "mock-bf01cd24c288"
+      }
+    }
+  }
+}
