@@ -3,6 +3,7 @@ import "dotenv/config";
 import { createReadStream, existsSync } from "node:fs";
 import { appendFile, mkdir } from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import pino from "pino";
 
 import { fetch } from "undici";
@@ -110,15 +111,12 @@ type ChatState = {
   favoritesSeq: number;
 };
 
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const BOT_TOKEN = process.env.BOT_TOKEN ?? process.env.TELEGRAM_BOT_TOKEN;
 const BOT_TEST_MODE = process.env.BOT_TEST_MODE === "1";
+const BOT_ENABLED = Boolean(BOT_TOKEN) || BOT_TEST_MODE;
 const API_KEY = process.env.API_KEY ?? "devkey";
 const MCP_BASE_URL = process.env.MCP_BASE_URL ?? "http://127.0.0.1:3000";
 const logger = pino({ level: process.env.LOG_LEVEL ?? "info" });
-
-if (!TELEGRAM_BOT_TOKEN && !BOT_TEST_MODE) {
-  throw new Error("TELEGRAM_BOT_TOKEN is required");
-}
 
 const telegrafModule = await import("telegraf").catch(() => null);
 if (!telegrafModule) {
@@ -126,7 +124,7 @@ if (!telegrafModule) {
 }
 
 const { Telegraf, Markup } = telegrafModule as any;
-const bot = new Telegraf(TELEGRAM_BOT_TOKEN ?? "TEST_BOT_TOKEN");
+const bot = new Telegraf(BOT_TOKEN ?? "TEST_BOT_TOKEN");
 const botModuleState = globalThis as typeof globalThis & {
   __etoBotHandlersRegistered?: boolean;
 };
@@ -2776,6 +2774,8 @@ bot.action(/^want:([^:]+):(\d+)(?::([a-z]+))?$/, async (ctx: any) => {
   state.phonePromptShownForHotelId = hotelId;
 });
 
+}
+
 bot.catch(async (err: unknown, ctx: any) => {
   logger.error(
     {
@@ -2794,7 +2794,15 @@ bot.catch(async (err: unknown, ctx: any) => {
   }
 });
 
-if (!BOT_TEST_MODE) {
+export async function startBot(): Promise<boolean> {
+  if (!BOT_ENABLED) {
+    logger.info("Telegram bot: disabled");
+    return false;
+  }
+  if (BOT_TEST_MODE) {
+    return false;
+  }
+
   try {
     const webhookInfo = await bot.telegram.getWebhookInfo();
     logger.info(
@@ -2816,7 +2824,15 @@ if (!BOT_TEST_MODE) {
 
   process.once("SIGINT", () => bot.stop("SIGINT"));
   process.once("SIGTERM", () => bot.stop("SIGTERM"));
+  return true;
 }
+
+const isEntryPoint = fileURLToPath(import.meta.url) === path.resolve(process.argv[1] ?? "");
+if (isEntryPoint) {
+  if (!BOT_ENABLED && !BOT_TEST_MODE) {
+    throw new Error("BOT_TOKEN or TELEGRAM_BOT_TOKEN is required");
+  }
+  void startBot();
 } else if (process.env.LLM_DEBUG === "1") {
   logger.warn({ provider: "telegram_bot" }, "[BOT] handlers already registered, skipping duplicate init");
 }

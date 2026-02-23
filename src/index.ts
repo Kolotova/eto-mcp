@@ -17,6 +17,14 @@ async function main() {
   try {
     await app.listen({ port, host });
     logger.info({ host, port }, "eto-mcp started");
+
+    const botToken = process.env.BOT_TOKEN ?? process.env.TELEGRAM_BOT_TOKEN;
+    if (botToken) {
+      const { startBot } = await import("./bot.js");
+      await startBot();
+    } else {
+      logger.info("Telegram bot: disabled");
+    }
   } catch (error) {
     logger.error({ err: error }, "failed to start eto-mcp");
     process.exit(1);
