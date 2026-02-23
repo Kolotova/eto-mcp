@@ -87,5 +87,9 @@ export function createHttpServer(logger: Logger) {
     }
   );
 
+  fastify.get("/mcp", async (_request, reply) => {
+    return reply.code(405).send({ error: "Use MCP JSON-RPC over SSE/POST" });
+  });
+
   return fastify;
 }
