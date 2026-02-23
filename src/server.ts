@@ -28,6 +28,12 @@ export function createHttpServer(logger: Logger) {
 
   fastify.register(rateLimit);
 
+  fastify.get("/", async () => ({
+    service: "triply-mcp",
+    health: "/health",
+    mcp: "/mcp"
+  }));
+
   fastify.get("/health", async () => ({ status: "ok" }));
 
   fastify.get("/assets/*", async (request, reply) => {
